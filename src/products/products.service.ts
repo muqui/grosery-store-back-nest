@@ -25,8 +25,8 @@ export class ProductsService{
     uploadImage(id: number, file: Express.Multer.File) {
         return this.productsRepository.uploadImage(id, file);
     }
-    updateProduct(id: number, updateProductDto: UpdateProductDto) {
-        return this.productsRepository.updateProduct(id, updateProductDto);
+    updateProduct(barcode: string, updateProductDto: UpdateProductDto) {
+        return this.productsRepository.updateProduct(barcode, updateProductDto);
     }
 
     findByName(name: string) {

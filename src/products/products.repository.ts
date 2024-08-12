@@ -100,29 +100,6 @@ async createProduct(createProductDto: CreateProductDto) {
 }
 
 
-/*
-    async createProduct(createProductDto: CreateProductDto) {
-        const product =  await  this.productRepository.save(createProductDto)  //crear el producto
-
-        console.log(product)
-        
-        
-
-
-         let purchaseTotalPrice = createProductDto.purchasePrice * createProductDto.stock;
-        const entry= {
-            supplier : createProductDto.supplier,
-            amount : product.stock,
-            productId : product.id,
-            purchasePrice: product.purchasePrice,  //precio compra
-            purchaseTotalPrice : purchaseTotalPrice
-
-        }
-
-         this.entryRepository.save(entry)  //Guarda entradas al inventario
-        return product
-    }
-  */
     async getProduct(barcode: string) {
         const productFound = await this.productRepository.findOne({  // busca si el usuario existe.
             where: {
@@ -161,22 +138,6 @@ async createProduct(createProductDto: CreateProductDto) {
         };
     }
 
-    async updateProduct(id: number, updateProductDto: UpdateProductDto) {
-        const productFound = await this.productRepository.findOne({
-            where: { id }
-        })
-
-        if (!productFound) {
-            throw new NotFoundException('Product does not exist');
-        }
-        await this.productRepository.update(id, updateProductDto);
-        return this.productRepository.findOne({
-            where: { id },
-        });
-
-
-    }
-
     findByName(name: string) {
         console.log("busqueda por nombre= " + name)
         return this.productRepository.find({
@@ -202,4 +163,65 @@ async createProduct(createProductDto: CreateProductDto) {
           ])
           .getMany();
       }
+
+      async updateProduct(barcode: string, updateProductDto: UpdateProductDto) {
+        // Encuentra el producto por el código de barras
+        console.log(barcode)
+        console.log(updateProductDto)
+        const product = await this.productRepository.findOne({
+            where: { barcode }
+        });
+
+        if (!product) {
+            throw new NotFoundException('Product does not exist');
+        }
+
+        // Actualiza el producto con los campos proporcionados en el DTO
+        await this.productRepository.update(product.id, {
+            description: updateProductDto.description,
+            price: updateProductDto.price,
+            stock: updateProductDto.stock,
+            imgUrl: updateProductDto.imgUrl,
+            name: updateProductDto.name,
+            categoryId: updateProductDto.categoryId,
+            barcode: updateProductDto.barcode,
+            howToSell: updateProductDto.howToSell,
+            purchasePrice: updateProductDto.purchasePrice,
+            wholesalePrice: updateProductDto.wholesalePrice,
+            stocktaking: updateProductDto.stocktaking,
+            minimumStock: updateProductDto.minimumStock,
+            entriy: updateProductDto.entriy,
+            output: updateProductDto.output
+        });
+
+
+        let purchaseTotalPrice = updateProductDto.purchasePrice * updateProductDto.stock;
+        const entry = {
+            supplier: updateProductDto.supplier,
+            amount: updateProductDto.stock,
+            productId: product.id,
+            purchasePrice: updateProductDto.purchasePrice,  // precio compra
+            purchaseTotalPrice: purchaseTotalPrice,
+        };
+        await this.entryRepository.save(entry);
+        
+        // Actualiza los productos en el paquete si el producto es un paquete
+        if (updateProductDto.howToSell === 'Paquete' && updateProductDto.packageContents) {
+            // Primero elimina los productos del paquete anteriores
+            await this.packageProductRepository.delete({ packageId: product.id });
+
+            // Luego, guarda los nuevos productos del paquete
+            for (const item of updateProductDto.packageContents) {
+                const packageProduct = new PackageProduct();
+                packageProduct.productId = item.productId;
+                packageProduct.quantity = item.quantity;
+                packageProduct.packageId = product.id; // ID del paquete es el ID del producto actualizado
+                await this.packageProductRepository.save(packageProduct);
+            }
+        }
+
+        // Devuelve el producto actualizado
+        return this.productRepository.findOne({ where: { barcode } });
+    }
+
 }

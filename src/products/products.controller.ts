@@ -52,11 +52,11 @@ export class ProductsController{
         return this.productsService.uploadImage(id,file);
     }
 
-    @Put(':id')
+    @Patch(':barcode')
     @ApiOperation({summary: 'Update product', description: 'Update an existing product by id'})
-    updateProduct(@Param('id',ParseIntPipe)id: number, @Body()updateProductDto: UpdateProductDto){
+    updateProduct(@Param('barcode')barcode: string, @Body()updateProductDto: UpdateProductDto){
 
-        return this.productsService.updateProduct(id, updateProductDto)
+        return this.productsService.updateProduct(barcode, updateProductDto)
     }
     @Delete()
     @ApiExcludeEndpoint()

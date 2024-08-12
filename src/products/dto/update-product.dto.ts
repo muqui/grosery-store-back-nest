@@ -1,48 +1,81 @@
-import { IsString, IsOptional, IsBoolean, IsNumber } from 'class-validator';
+import { IsArray, IsBoolean, IsNotEmpty, IsNumber, IsOptional, IsString } from 'class-validator';
+import { Type } from 'class-transformer';
+
+class PackageContentDto {
+    @IsNumber()
+    productId: number;
+
+    @IsNumber()
+    quantity: number;
+}
 
 export class UpdateProductDto {
-     /**
-     * Descripcion del producto
-     * @example lapiz color rojo No 2
-     */
-     @IsString()
-     description?:string; 
- 
-     /**
-      * Precio del producto
-      * @example 3.00
-      */
-     @IsNumber()
-     price?: number; 
- 
-     /**
-      * Cantidad disponible
-      * @example 5
-      */
-     @IsNumber()      
-     stock?: number; 
- 
-     /**
-      * url de la imagen
-      * @example https://res.cloudinary.com/dral3pvzq/image/upload/v1720243885/y5urcpvdwlftnlx0ocbm.png
-      */
-     @IsString()      
-     imgUrl?: string; 
- 
-     /**
-      * Nombre del producto
-      * @example Lapiz MAE
-      */
-     @IsString()     
-     name : string;   
- 
-     /**
-      * Id de la categoria clave foranea
-      * @example 1
-      */
-     @IsNumber()    
-     categoryId: number;  
+    @IsString()
+    @IsOptional()
+    description?: string;
 
+    @IsNumber()
+    @IsOptional()
+    price?: number;
 
- 
+    @IsNumber()
+    @IsOptional()
+    stock?: number;
+
+    @IsString()
+    @IsOptional()
+    imgUrl?: string;
+
+    @IsString()
+    @IsOptional()
+    name?: string;
+
+    @IsNumber()
+    @IsOptional()
+    categoryId?: number;
+
+    @IsString()
+    @IsOptional()
+    barcode?: string;
+
+    @IsString()
+    @IsOptional()
+    howToSell?: string;
+
+    @IsNumber()
+    @IsOptional()
+    purchasePrice?: number;
+
+    @IsNumber()
+    @IsOptional()
+    wholesalePrice?: number;
+
+    @IsBoolean()
+    @IsOptional()
+    stocktaking?: boolean;
+
+    @IsNumber()
+    @IsOptional()
+    minimumStock?: number;
+
+    @IsNumber()
+    @IsOptional()
+    entriy?: number;
+
+    @IsNumber()
+    @IsOptional()
+    output?: number;
+
+    @IsString()
+    @IsOptional()
+    supplier?: string;
+
+    @IsNumber()
+    @IsOptional()
+    quantity?: number;
+
+    @IsArray()
+    @Type(() => PackageContentDto)
+    @IsOptional()
+    packageContents?: PackageContentDto[];
 }

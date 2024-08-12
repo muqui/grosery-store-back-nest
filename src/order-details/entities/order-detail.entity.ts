@@ -15,7 +15,7 @@ export class OrderDetail {
     @Column('decimal', { precision: 10, scale: 2 })
     purchasePrice: number; // precio de compra.
 
-    @Column()
+    @Column('decimal', { precision: 10, scale: 2 })
     amount : number;
 
       // Relación N:1 con Order
