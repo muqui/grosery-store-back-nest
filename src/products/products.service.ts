@@ -36,4 +36,6 @@ export class ProductsService{
     getAllEntries() {
         return this.productsRepository.getAllEntries();
     }
+
+    
 }

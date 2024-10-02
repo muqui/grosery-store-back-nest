@@ -1,7 +1,7 @@
 import { BadRequestException, ConflictException, HttpException, HttpStatus, Injectable, NotFoundException, UnauthorizedException } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Product } from "./products.entity";
-import { Like, Repository } from "typeorm";
+import { ILike, Like, Repository } from "typeorm";
 import { CreateProductDto } from "./create-product.dto";
 import { CloudinaryService } from "src/users/cloudinary.service";
 import { UpdateProductDto } from "./dto/update-product.dto";
@@ -142,7 +142,7 @@ async createProduct(createProductDto: CreateProductDto) {
         console.log("busqueda por nombre= " + name)
         return this.productRepository.find({
             where: {
-              name: Like(`%${name}%`)
+              name: ILike(`%${name}%`)
             }
           });
     }

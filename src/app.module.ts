@@ -7,6 +7,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { CategoriesModule } from './categories/categories.module';
 import { OrdersModule } from './orders/orders.module';
 import { OrderDetailsModule } from './order-details/order-details.module';
+import { IncomesModule } from './incomes/incomes.module';
 
 
 import typeormConfig  from './config/typeorm';
@@ -22,7 +23,7 @@ import typeormConfig  from './config/typeorm';
       useFactory: (configService: ConfigService) => 
         configService.get('typeorm')
     }),
-    UsersModule, ProductsModule, AuthModule, CategoriesModule, OrdersModule, OrderDetailsModule],
+    UsersModule, ProductsModule, AuthModule, CategoriesModule, OrdersModule, OrderDetailsModule, IncomesModule],
   controllers: [],
   providers: [],
 })

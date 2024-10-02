@@ -1,4 +1,4 @@
-import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
+import { ConflictException, HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -19,7 +19,8 @@ constructor(@InjectRepository(Category) private readonly categoryRepository : Re
     })
 
     if(categoryFound){
-      return  new HttpException('Category already exist', HttpStatus.CONFLICT)
+     // return  new HttpException('Category already exist', HttpStatus.CONFLICT)
+     throw new ConflictException('Departament exists');
     }
     // const saveCategory = Object.assign( createCategoryDto.name.toLocaleUpperCase, createCategoryDto)
 

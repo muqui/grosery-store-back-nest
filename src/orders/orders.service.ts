@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { CreateOrderDto } from './dto/create-order.dto';
 import { UpdateOrderDto } from './dto/update-order.dto';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -14,25 +14,86 @@ export class OrdersService {
     @InjectRepository(Order) private orderRepository: Repository<Order>,
     @InjectRepository(Product) private productRepository: Repository<Product>
   ){}
-
- async create(createOrderDto: CreateOrderDto) {
-  const { userId, orderDetails } = createOrderDto;
-
-  const order = new Order();
-  order.user = { id: userId } as any; // Asume que solo necesitas el id del usuario
-
-  order.orderDetails = await Promise.all(orderDetails.map(async detailDto => {
-    const orderDetail = new OrderDetail();
-    orderDetail.price = detailDto.price;
-    orderDetail.amount = detailDto.amount;
-    orderDetail.purchasePrice = detailDto.purchasePrice
-    orderDetail.product = await this.productRepository.findOneBy({ id: detailDto.productId }); // Usar findOneBy
-    return orderDetail;
-  }));
-
-  return this.orderRepository.save(order);
+  async create(createOrderDto: CreateOrderDto) {
+    const { userId, orderDetails } = createOrderDto;
   
+    // Crear nueva orden y asignar usuario
+    const order = new Order();
+    order.user = { id: userId } as any; // Asume que solo necesitas el id del usuario
+  
+    // Procesar cada OrderDetail y actualizar el stock y output del producto o productos del paquete
+    order.orderDetails = await Promise.all(orderDetails.map(async detailDto => {
+      const orderDetail = new OrderDetail();
+      orderDetail.price = detailDto.price;
+      orderDetail.amount = detailDto.amount;
+      orderDetail.purchasePrice = detailDto.purchasePrice;
+  
+      // Buscar el producto asociado
+      const product = await this.productRepository.findOne({
+        where: { id: detailDto.productId },
+        relations: ['packageProducts'], // Cargar los productos del paquete si es que existen
+      });
+      
+      if (!product) {
+        throw new NotFoundException(`Product with ID ${detailDto.productId} not found`);
+      }
+  
+      // Si el producto se vende como paquete, descontar los productos del paquete
+      if (product.howToSell === 'Paquete') {
+        // Recorrer los productos del paquete y descontar su stock
+        for (const packageProduct of product.packageProducts) {
+          const includedProduct = await this.productRepository.findOneBy({ id: packageProduct.productId });
+          
+          if (!includedProduct) {
+            throw new NotFoundException(`Product included in the package with ID ${packageProduct.productId} not found`);
+          }
+  
+          // Descontar la cantidad proporcional al número de paquetes vendidos
+          const totalAmountToDiscount = packageProduct.quantity * orderDetail.amount;
+  
+          includedProduct.stock -= totalAmountToDiscount;
+  
+          // Asegurarse de que el stock no sea negativo
+          if (includedProduct.stock < 0) {
+            throw new BadRequestException(`Insufficient stock for product ${includedProduct.name} in package`);
+          }
+  
+          // Sumar la cantidad al campo output del producto
+          includedProduct.output += totalAmountToDiscount;
+  
+          // Guardar los cambios del stock y output en la base de datos
+          await this.productRepository.save(includedProduct);
+  
+          console.log(`Stock and output updated for product ${includedProduct.name}, new stock: ${includedProduct.stock}, new output: ${includedProduct.output}`);
+        }
+      } else {
+        // Descontar el stock si el producto no es un paquete
+        product.stock -= orderDetail.amount;
+  
+        // Asegurarse de que el stock no sea negativo
+        if (product.stock < 0) {
+          throw new BadRequestException(`Insufficient stock for product ${product.name}`);
+        }
+  
+        // Sumar la cantidad al campo output del producto
+        product.output += orderDetail.amount;
+  
+        // Guardar los cambios del stock y output en la base de datos
+        await this.productRepository.save(product);
+  
+        console.log(`Stock and output updated for product ${product.name}, new stock: ${product.stock}, new output: ${product.output}`);
+      }
+  
+      // Asignar el producto al detalle de la orden
+      orderDetail.product = product;
+  
+      return orderDetail;
+    }));
+  
+    // Guardar la orden completa en la base de datos
+    return this.orderRepository.save(order);
   }
+   
 
     // Método para obtener productos vendidos
     async getSoldProducts(): Promise<any[]> {
