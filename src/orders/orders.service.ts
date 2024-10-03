@@ -6,13 +6,15 @@ import { Order } from './entities/order.entity';
 import { Repository } from 'typeorm';
 import { OrderDetail } from 'src/order-details/entities/order-detail.entity';
 import { Product } from 'src/products/products.entity';
+import { PackageProduct } from 'src/products/package-product.entity';
 
 @Injectable()
 export class OrdersService {
 
   constructor(
     @InjectRepository(Order) private orderRepository: Repository<Order>,
-    @InjectRepository(Product) private productRepository: Repository<Product>
+    @InjectRepository(Product) private productRepository: Repository<Product>,
+    @InjectRepository(PackageProduct) private packageProductRepository: Repository<PackageProduct>
   ){}
   async create(createOrderDto: CreateOrderDto) {
     const { userId, orderDetails } = createOrderDto;
@@ -29,29 +31,44 @@ export class OrdersService {
       orderDetail.purchasePrice = detailDto.purchasePrice;
   
       // Buscar el producto asociado
+      // Find the product and its associated package products
+
+
       const product = await this.productRepository.findOne({
         where: { id: detailDto.productId },
-        relations: ['packageProducts'], // Cargar los productos del paquete si es que existen
+        relations: ['packageProducts', 'packageProducts.product', 'packageProducts.package'],
       });
+
+      console.log(product)
       
+     
+
+      
+
+     
       if (!product) {
         throw new NotFoundException(`Product with ID ${detailDto.productId} not found`);
       }
-  
+      
       // Si el producto se vende como paquete, descontar los productos del paquete
       if (product.howToSell === 'Paquete') {
+        
         // Recorrer los productos del paquete y descontar su stock
         for (const packageProduct of product.packageProducts) {
+        
           const includedProduct = await this.productRepository.findOneBy({ id: packageProduct.productId });
-          
+          console.log(`Producti incluido en el paquete:  ${includedProduct.id}`)
+         
           if (!includedProduct) {
             throw new NotFoundException(`Product included in the package with ID ${packageProduct.productId} not found`);
           }
   
           // Descontar la cantidad proporcional al número de paquetes vendidos
-          const totalAmountToDiscount = packageProduct.quantity * orderDetail.amount;
+          const totalAmountToDiscount1 = packageProduct.quantity * orderDetail.amount;
+          const totalAmountToDiscount = 1;
+          console.log(`cantidad a descontar = ${typeof(totalAmountToDiscount1)} `)
   
-          includedProduct.stock -= totalAmountToDiscount;
+          includedProduct.stock -= totalAmountToDiscount1;
   
           // Asegurarse de que el stock no sea negativo
           if (includedProduct.stock < 0) {
@@ -65,6 +82,7 @@ export class OrdersService {
           await this.productRepository.save(includedProduct);
   
           console.log(`Stock and output updated for product ${includedProduct.name}, new stock: ${includedProduct.stock}, new output: ${includedProduct.output}`);
+          
         }
       } else {
         // Descontar el stock si el producto no es un paquete
@@ -93,8 +111,7 @@ export class OrdersService {
     // Guardar la orden completa en la base de datos
     return this.orderRepository.save(order);
   }
-   
-
+  
     // Método para obtener productos vendidos
     async getSoldProducts(): Promise<any[]> {
       

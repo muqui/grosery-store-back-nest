@@ -8,7 +8,7 @@ export class PackageProduct {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @ManyToOne(() => Product, (product) => product.packageProducts, { eager: true })
+    @ManyToOne(() => Product, (product) => product.packageProducts)
     product: Product;
 
     @Column()
@@ -18,6 +18,10 @@ export class PackageProduct {
     quantity: number; // Cantidad de este producto en el paquete
 
     
+
+       // Relación con el producto que representa el paquete
+       @ManyToOne(() => Product, (product) => product.packageProducts)
+       package: Product;
 
     @Column()
     packageId: number; // ID del paquete al que pertenece este producto

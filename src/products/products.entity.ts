@@ -58,7 +58,7 @@ export class Product{
      //  @ManyToMany(() => Package, (packageEntity) => packageEntity.products)
      //  packages: Package[];
 
-     @OneToMany(() => PackageProduct, (packageProduct) => packageProduct.product)
+     @OneToMany(() => PackageProduct, (packageProduct) => packageProduct.package)
      packageProducts: PackageProduct[];
 
 }
