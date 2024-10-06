@@ -52,6 +52,8 @@ export class OrdersService {
       
       // Si el producto se vende como paquete, descontar los productos del paquete
       if (product.howToSell === 'Paquete') {
+
+        console.log(`Producti incluido en el paquete:  `)
         
         // Recorrer los productos del paquete y descontar su stock
         for (const packageProduct of product.packageProducts) {

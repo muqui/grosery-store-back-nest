@@ -166,12 +166,12 @@ async createProduct(createProductDto: CreateProductDto) {
 
       async updateProduct(barcode: string, updateProductDto: UpdateProductDto) {
         // Encuentra el producto por el código de barras
-        console.log(barcode)
-        console.log(updateProductDto)
+        
         const product = await this.productRepository.findOne({
             where: { barcode }
         });
-
+        console.log(`PRODUCTO desde base A stock ${product.stock} entradas = ${product.entriy} Salidas = ${product.output}`)
+        console.log(`datos que se envian         ${updateProductDto.stock} entradas = ${updateProductDto.entriy} Salidas = ${updateProductDto.output}`)
         if (!product) {
             throw new NotFoundException('Product does not exist');
         }
@@ -180,7 +180,7 @@ async createProduct(createProductDto: CreateProductDto) {
         await this.productRepository.update(product.id, {
             description: updateProductDto.description,
             price: updateProductDto.price,
-            stock: updateProductDto.stock,
+            stock: updateProductDto.stock + updateProductDto.entriy,
             imgUrl: updateProductDto.imgUrl,
             name: updateProductDto.name,
             categoryId: updateProductDto.categoryId,
@@ -190,18 +190,18 @@ async createProduct(createProductDto: CreateProductDto) {
             wholesalePrice: updateProductDto.wholesalePrice,
             stocktaking: updateProductDto.stocktaking,
             minimumStock: updateProductDto.minimumStock,
-            entriy: updateProductDto.entriy,
-            output: updateProductDto.output
+            entriy: updateProductDto.entriy + product.entriy ,
+           // output: updateProductDto.output
         });
 
 
         let purchaseTotalPrice = updateProductDto.purchasePrice * updateProductDto.stock;
         const entry = {
             supplier: updateProductDto.supplier,
-            amount: updateProductDto.stock,
+            amount: updateProductDto.entriy,  
             productId: product.id,
             purchasePrice: updateProductDto.purchasePrice,  // precio compra
-            purchaseTotalPrice: purchaseTotalPrice,
+            purchaseTotalPrice: updateProductDto.entriy * updateProductDto.purchasePrice, 
         };
         await this.entryRepository.save(entry);
         
@@ -221,6 +221,7 @@ async createProduct(createProductDto: CreateProductDto) {
         }
 
         // Devuelve el producto actualizado
+        console.log(`Lo que  SE ENVIO A ACTIUALIZAR ${updateProductDto.entriy}` )
         return this.productRepository.findOne({ where: { barcode } });
     }
 
