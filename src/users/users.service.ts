@@ -9,6 +9,7 @@ export class UsersService{
     findOneByEmail(email: string) {
         return this.usersRepository.findOneByEmail(email)
     }
+   
     constructor(private usersRepository: UsersRepository){}
 
     getUsers(){

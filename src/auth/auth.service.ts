@@ -19,7 +19,7 @@ export class AuthService{
     async signin({email, password}: SigninDto){
         const user = await this.userService.findOneByEmail(email)
 
-        console.log(user);
+        
 
         if(!user){
             throw new UnauthorizedException('email or password incorrect')
@@ -43,12 +43,9 @@ export class AuthService{
     }
 
     async createUser(createUserDto: CreateUserDto) {
-        const user = await this.userService.findOneByEmail(createUserDto.email)
-        if(user){
-            throw new BadRequestException('User already exists')
-        }
-        createUserDto.password = await bcrypt.hash(createUserDto.password, 10)
-        console.log(await bcrypt.hash(createUserDto.password, 10))
+       
+       // createUserDto.password = await bcrypt.hash(createUserDto.password, 10)
+      
         return this.userService.createUser(createUserDto);
     }
 }

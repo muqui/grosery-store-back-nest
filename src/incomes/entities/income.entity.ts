@@ -8,6 +8,8 @@ export class Income {
     id: string
     @Column('decimal', { precision: 10, scale: 2 })
     amount: number
+    @Column('date')
+    date: Date
     @Column()
     description : string
     @Column()

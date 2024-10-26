@@ -23,11 +23,7 @@ export class UsersController{
  getUsers(){
      return this.usersService.getUsers();
  }
- @Post()
- createUser( @Body() createUserDto: CreateUserDto){
-   
-     return this.usersService.createUser(createUserDto)
- }
+ 
 
  @Get('admin')
  @Roles(Role.Admin)
@@ -36,25 +32,7 @@ export class UsersController{
     return "ruta protegida";
  }
 
- @Post('Profile/images')
- @UseInterceptors(FileInterceptor('image'))
- //@UsePipes(MinSizeValidatorPipe)
- getUserImages(@UploadedFile(
-    new ParseFilePipe({
-        validators: [
-            new MaxFileSizeValidator({
-                maxSize: 1000000    ,
-                message: 'El archivo debe ser menor a 100kb'
-            }),
-            new FileTypeValidator({
-                fileType: /(jpg|jpeg|png|webp)$/,
-            })
-        ]
-    })
- ) file: Express.Multer.File){
-    return this.cloudinaryService.upladImage(file);
-
- }
+/*
  @Put()
  updateUser(){
      return "este endpoint actualiza un usuario";
@@ -63,4 +41,5 @@ export class UsersController{
  deleteUser(){
      return "este endpoint borra un usuario";
  }
+ */
 }

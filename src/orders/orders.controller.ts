@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, UseGuards, Query, BadRequestException } from '@nestjs/common';
 import { OrdersService } from './orders.service';
 import { CreateOrderDto } from './dto/create-order.dto';
 import { UpdateOrderDto } from './dto/update-order.dto';
@@ -35,6 +35,17 @@ export class OrdersController {
    
   }
 
+  //filtro por rango de fecha y Id usuario y departamento
+   @Get('solds')
+   getSoldProductsByName(
+  @Query('startDate') startDate: string, 
+  @Query('endDate') endDate: string, 
+  @Query('userName') userName: string = '',
+  @Query('departmentName') departmentName: string =''
+): any {
+  return this.ordersService.getSoldProductsByDateAndIDUser(startDate, endDate, userName, departmentName);
+}
+
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.ordersService.findOne(+id);
@@ -49,6 +60,8 @@ export class OrdersController {
   remove(@Param('id') id: string) {
     return this.ordersService.remove(+id);
   }
+
+  
 
 
 }

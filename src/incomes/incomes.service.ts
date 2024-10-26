@@ -9,19 +9,20 @@ import { CreateIncomeNameDto } from './dto/create-income-name.dto';
 
 @Injectable()
 export class IncomesService {
-  
- 
+
+
+
   constructor(
     @InjectRepository(IncomeNames) private incomeNamesRepository: Repository<IncomeNames>,
     @InjectRepository(Income) private incomeRepository: Repository<Income>
-){}
+  ) { }
 
   create(createIncomeDto: CreateIncomeDto) {
-    return 'This action adds a new income';
+    return this.incomeRepository.save(createIncomeDto)
   }
 
-  findAll() {
-    return `This action returns all incomes`;
+  async findAll() {
+    return await this.incomeRepository.find();
   }
 
   findOne(id: number) {
@@ -41,15 +42,45 @@ export class IncomesService {
   async createName(createIncomeNameDto: CreateIncomeNameDto) {
     //buscamos si existe en nombre del ingreso
     const IncomeNameFound = await this.incomeNamesRepository.findOne({
-      where:{
-        name :  createIncomeNameDto.name
+      where: {
+        name: createIncomeNameDto.name
       }
     })
-    if(IncomeNameFound){
+    if (IncomeNameFound) {
       // return  new HttpException('Category already exist', HttpStatus.CONFLICT)
       throw new ConflictException('Income name exists');
-     }
+    }
     return this.incomeNamesRepository.save(createIncomeNameDto)
   }
-  
+
+  async findAllNames() {
+    return this.incomeNamesRepository.find();
+  }
+
+  async findAllFilter(startDate: string, endDate: string, name: string) {
+    console.log(`FEcha Inicio= ${startDate} Fecha fin ${endDate}  Nombre = ${name}`)
+    const incomesFilter = await this.incomeRepository.createQueryBuilder('income')
+      .innerJoinAndSelect('income.incomeNames', 'incomenames')
+      .select([
+        'income.description',
+        'income.date',
+        'income.amount',
+        'incomenames.name'
+      ])
+      .addSelect('SUM(income.amount)', 'totalAmount') // Agregamos la sumatoria de income.amount
+      .where('income.date >= :startDate', { startDate })
+      .andWhere('income.date <= :endDate', { endDate })
+      .andWhere('incomenames.name ILIKE :name', { name: `%${name}%` })
+      .groupBy('income.id, incomenames.id') // Agrupamos los resultados
+      .getRawAndEntities(); // Devuelve tanto los resultados agregados como las entidades originales
+    // Calculamos la suma total desde los resultados 'raw'
+    const totalAmount = incomesFilter.raw.reduce((sum, current) => sum + parseFloat(current.totalAmount), 0).toFixed(2);
+
+    return {
+      incomes: incomesFilter.entities,
+      totalAmount
+    };
+
+  }
+
 }

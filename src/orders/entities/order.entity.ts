@@ -9,7 +9,7 @@ export class Order {
     @PrimaryGeneratedColumn()
     id: number;
 
-    @Column({type: "timestamptz", default: () => "CURRENT_TIMESTAMP" })
+    @Column({type: "timestamp with time zone", default: () => "CURRENT_TIMESTAMP" })
     date: Date;
 
     @ManyToOne(() => User, (user) => user.orders)
