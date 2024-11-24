@@ -5,6 +5,7 @@ import { UpdateProductDto } from "./dto/update-product.dto";
 
 @Injectable()
 export class ProductsService{
+  
    
     
     constructor (private productsRepository: ProductsRepository){}
@@ -13,6 +14,9 @@ export class ProductsService{
     }
 
     createProduct(createProductDto : CreateProductDto) {
+       
+        console.log(createProductDto)
+        
         return this.productsRepository.createProduct(createProductDto)
     }
 
@@ -27,6 +31,10 @@ export class ProductsService{
     }
     updateProduct(barcode: string, updateProductDto: UpdateProductDto) {
         return this.productsRepository.updateProduct(barcode, updateProductDto);
+    }
+
+    addToinvenory(barcode: string, updateProductDto: UpdateProductDto) {
+        return this.productsRepository.addToinvenory(barcode, updateProductDto);
     }
 
     findByName(name: string) {

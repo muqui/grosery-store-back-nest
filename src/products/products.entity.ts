@@ -16,12 +16,13 @@ export class Product{
     name:string;
     @Column()
     description: string;
+    
     @Column({unique: true})
     barcode: string;
 
      @Column('decimal', { precision: 10, scale: 2 })
     price: number;  //precio venta 
-    @Column()
+    @Column('decimal', { precision: 10, scale: 2 })
     stock: number;  //cantidad de productos.  saldo
     @Column()
     imgUrl: string;
@@ -38,10 +39,15 @@ export class Product{
     stocktaking: boolean; //true si se usa inventario
     @Column()
     minimumStock: number;  //stcok minimo
-    @Column()
+    @Column('decimal', { precision: 10, scale: 2 })
     entriy: number; // entrada de productos
-    @Column()
+    @Column('decimal', { precision: 10, scale: 2 })
     output: number; //salida de productos
+
+    @Column({ type: 'boolean', default: true })
+    isActive: boolean;
+
+   
     
    @ManyToOne(() => Category, (category) => category.Products)
    category: Category

@@ -30,6 +30,8 @@ export class OrdersService {
   async create(createOrderDto: CreateOrderDto) {
     const { userId, orderDetails } = createOrderDto;
 
+    
+
     // Crear nueva orden y asignar usuario
     const order = new Order();
     order.user = { id: userId } as any; // Asume que solo necesitas el id del usuario
@@ -50,17 +52,11 @@ export class OrdersService {
         relations: ['packageProducts', 'packageProducts.product', 'packageProducts.package'],
       });
 
-      console.log(product)
-
-
-
-
-
-
+    
       if (!product) {
         throw new NotFoundException(`Product with ID ${detailDto.productId} not found`);
       }
-
+      
       // Si el producto se vende como paquete, descontar los productos del paquete
       if (product.howToSell === 'Paquete') {
 
@@ -77,19 +73,21 @@ export class OrdersService {
           }
 
           // Descontar la cantidad proporcional al número de paquetes vendidos
-          const totalAmountToDiscount1 = packageProduct.quantity * orderDetail.amount;
-          const totalAmountToDiscount = 1;
+         // const totalAmountToDiscount1 = packageProduct.quantity * orderDetail.amount;
+        //  const totalAmountToDiscount = 1;
+        const totalAmountToDiscount1 = Number((packageProduct.quantity * orderDetail.amount).toFixed(2));
           console.log(`cantidad a descontar = ${typeof (totalAmountToDiscount1)} `)
 
           includedProduct.stock -= totalAmountToDiscount1;
 
+        
           // Asegurarse de que el stock no sea negativo
           if (includedProduct.stock < 0) {
             throw new BadRequestException(`Insufficient stock for product ${includedProduct.name} in package`);
           }
 
           // Sumar la cantidad al campo output del producto
-          includedProduct.output += totalAmountToDiscount;
+          includedProduct.output += totalAmountToDiscount1;
 
           // Guardar los cambios del stock y output en la base de datos
           await this.productRepository.save(includedProduct);
@@ -99,27 +97,37 @@ export class OrdersService {
         }
       } else {
         // Descontar el stock si el producto no es un paquete
+       console.log("entra ------------------")
         product.stock -= orderDetail.amount;
 
+      
+
+      
         // Asegurarse de que el stock no sea negativo
         if (product.stock < 0) {
           throw new BadRequestException(`Insufficient stock for product ${product.name}`);
         }
 
         // Sumar la cantidad al campo output del producto
-        product.output += orderDetail.amount;
+        //product.output += orderDetail.amount;
+        product.output = parseFloat((Number(product.output) + Number(orderDetail.amount)).toFixed(2));
 
-        // Guardar los cambios del stock y output en la base de datos
+        console.log("product.output: " + product.output);
+
+       
         await this.productRepository.save(product);
 
         console.log(`Stock and output updated for product ${product.name}, new stock: ${product.stock}, new output: ${product.output}`);
+        console.log("sale ------------------")
       }
 
       // Asignar el producto al detalle de la orden
       orderDetail.product = product;
-
+      console.log(orderDetail)
       return orderDetail;
     }));
+
+   
 
     // Guardar la orden completa en la base de datos
     return this.orderRepository.save(order);

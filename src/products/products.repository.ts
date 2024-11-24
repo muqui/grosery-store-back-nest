@@ -14,23 +14,23 @@ import { PackageProduct } from "./package-product.entity";
 
 @Injectable()
 export class ProductsRepository {
-   
+
     constructor(
-        @InjectRepository(Product) 
+        @InjectRepository(Product)
         private readonly productRepository: Repository<Product>,
 
         @InjectRepository
-        (Entry) private readonly entryRepository: Repository<Product>,
+            (Entry) private readonly entryRepository: Repository<Product>,
 
-        
+
         @InjectRepository(PackageProduct)
         private readonly packageProductRepository: Repository<PackageProduct>,
 
         private readonly cloudinaryService: CloudinaryService,
 
-       
-      
- 
+
+
+
     ) { }
 
     async getProducts() {
@@ -38,66 +38,70 @@ export class ProductsRepository {
 
         return this.productRepository.find()
     }
-/**
- * Crea el producto y el registro para el inventario
- * @param createProductDto 
- * @returns 
- */
+    /**
+     * Crea el producto y el registro para el inventario
+     * @param createProductDto 
+     * @returns 
+     */
 
-async createProduct(createProductDto: CreateProductDto) {
-     // Validar si el producto ya existe basado en algún campo único como 'barcode'
-     const existingProduct = await this.productRepository.findOne({
-        where: { barcode: createProductDto.barcode }
-    });
+    async createProduct(createProductDto: CreateProductDto) {
+        // Validar si el producto ya existe basado en algún campo único como 'barcode'
+        const existingProduct = await this.productRepository.findOne({
+            where: { barcode: createProductDto.barcode }
+        });
+        // console.log("existe el producto= " + createProductDto.howToSell)
+        // console.log(existingProduct)
+        if (existingProduct) {
+            throw new ConflictException('product exists');
+        }
+        // Primero, crea el producto
+        console.log("CREAR PRODUCTO barcode" + createProductDto.barcode);
+        const product = await this.productRepository.save(createProductDto);
 
-    if (existingProduct) {
-        throw new ConflictException('product exists');
+
+
+        // Si el producto es un paquete
+        if (createProductDto.howToSell === 'Paquete') {
+            // Asegúrate de que los campos necesarios están presentes
+            if (!createProductDto.packageContents || createProductDto.packageContents.length === 0) {
+                throw new BadRequestException('Paquete debe contener productos.');
+            }
+
+            // Recupera los productos incluidos en el paquete
+            const includedProducts = await this.productRepository.findByIds(createProductDto.packageContents.map(item => item.productId));
+
+            // Verifica que todos los productos existan
+            if (includedProducts.length !== createProductDto.packageContents.length) {
+                throw new BadRequestException('Algunos productos no existen.');
+            }
+
+            // Crea los registros de paquetes de productos
+            for (const item of createProductDto.packageContents) {
+                const packageProduct = new PackageProduct();
+                packageProduct.productId = item.productId; // ID del producto incluido en el paquete
+                packageProduct.quantity = item.quantity; // Cantidad de este producto en el paquete
+                packageProduct.packageId = product.id; // ID del paquete, que es el mismo que el ID del producto recién creado
+                await this.packageProductRepository.save(packageProduct);
+            }
+        } else {
+            console.log("lo que se guarda")
+            // Para productos que no son paquetes
+            let purchaseTotalPrice = createProductDto.purchasePrice * createProductDto.stock;
+            const entry = {
+                supplier: createProductDto.supplier,
+                amount: product.stock,
+                productId: product.id,
+                purchasePrice: product.purchasePrice,  // precio compra
+                purchaseTotalPrice: purchaseTotalPrice,
+            };
+
+            console.log(entry)
+
+            await this.entryRepository.save(entry);
+        }
+
+        return product;
     }
-    // Primero, crea el producto
-    console.log("CREAR PRODUCTO");
-    const product = await this.productRepository.save(createProductDto);
-
-    console.log(product);
-
-    // Si el producto es un paquete
-    if (createProductDto.howToSell === 'Paquete') {
-        // Asegúrate de que los campos necesarios están presentes
-        if (!createProductDto.packageContents || createProductDto.packageContents.length === 0) {
-            throw new BadRequestException('Paquete debe contener productos.');
-        }
-
-        // Recupera los productos incluidos en el paquete
-        const includedProducts = await this.productRepository.findByIds(createProductDto.packageContents.map(item => item.productId));
-        
-        // Verifica que todos los productos existan
-        if (includedProducts.length !== createProductDto.packageContents.length) {
-            throw new BadRequestException('Algunos productos no existen.');
-        }
-
-        // Crea los registros de paquetes de productos
-        for (const item of createProductDto.packageContents) {
-            const packageProduct = new PackageProduct();
-            packageProduct.productId = item.productId; // ID del producto incluido en el paquete
-            packageProduct.quantity = item.quantity; // Cantidad de este producto en el paquete
-            packageProduct.packageId = product.id; // ID del paquete, que es el mismo que el ID del producto recién creado
-            await this.packageProductRepository.save(packageProduct);
-        }
-    } else {
-        // Para productos que no son paquetes
-        let purchaseTotalPrice = createProductDto.purchasePrice * createProductDto.stock;
-        const entry = {
-            supplier: createProductDto.supplier,
-            amount: product.stock,
-            productId: product.id,
-            purchasePrice: product.purchasePrice,  // precio compra
-            purchaseTotalPrice: purchaseTotalPrice,
-        };
-
-        await this.entryRepository.save(entry);
-    }
-
-    return product;
-}
 
 
     async getProduct(barcode: string) {
@@ -142,45 +146,55 @@ async createProduct(createProductDto: CreateProductDto) {
         console.log("busqueda por nombre= " + name)
         return this.productRepository.find({
             where: {
-              name: ILike(`%${name}%`)
+                name: ILike(`%${name}%`)
             }
-          });
+        });
     }
 
     async getAllEntries(): Promise<any[]> {
         return this.entryRepository.createQueryBuilder('entry')
-          .innerJoinAndSelect('entry.product', 'product')
-          .select([
-            'entry.id',
-            'entry.supplier',
-            'entry.date',
-            'entry.amount',
-            'entry.purchasePrice',
-            'entry.purchaseTotalPrice',
-            'product.id',
-            'product.name',
-            'product.barcode'
-          ])
-          .getMany();
-      }
+            .innerJoinAndSelect('entry.product', 'product')
+            .select([
+                'entry.id',
+                'entry.supplier',
+                'entry.date',
+                'entry.amount',
+                'entry.purchasePrice',
+                'entry.purchaseTotalPrice',
+                'product.id',
+                'product.name',
+                'product.barcode'
+            ])
+            .getMany();
+    }
 
-      async updateProduct(barcode: string, updateProductDto: UpdateProductDto) {
+    async addToinvenory(barcode: string, updateProductDto: UpdateProductDto) {
         // Encuentra el producto por el código de barras
-        
+        console.log(updateProductDto)
+
         const product = await this.productRepository.findOne({
             where: { barcode }
         });
-        console.log(`PRODUCTO desde base A stock ${product.stock} entradas = ${product.entriy} Salidas = ${product.output}`)
-        console.log(`datos que se envian         ${updateProductDto.stock} entradas = ${updateProductDto.entriy} Salidas = ${updateProductDto.output}`)
+        //  console.log(`PRODUCTO desde base A stock ${product.stock} entradas = ${product.entriy} Salidas = ${product.output}`)
+        //  console.log(`datos que se envian         ${updateProductDto.stock} entradas = ${updateProductDto.entriy} Salidas = ${updateProductDto.output}`)
         if (!product) {
             throw new NotFoundException('Product does not exist');
         }
+
+        // const entriy = parseFloat((updateProductDto.entriy + product.entriy).toFixed(2));
+        const stock = parseFloat((Number(updateProductDto.stock) + Number(updateProductDto.entriy)).toFixed(2));
+
+        const entriyValue = Number(updateProductDto.entriy) || 0;
+        const productEntriyValue = Number(product.entriy) || 0;
+
+        const entriy = parseFloat((entriyValue + productEntriyValue).toFixed(2));
+        console.log(`Stock ${stock}`)
 
         // Actualiza el producto con los campos proporcionados en el DTO
         await this.productRepository.update(product.id, {
             description: updateProductDto.description,
             price: updateProductDto.price,
-            stock: updateProductDto.stock + updateProductDto.entriy,
+            stock: stock,
             imgUrl: updateProductDto.imgUrl,
             name: updateProductDto.name,
             categoryId: updateProductDto.categoryId,
@@ -190,21 +204,23 @@ async createProduct(createProductDto: CreateProductDto) {
             wholesalePrice: updateProductDto.wholesalePrice,
             stocktaking: updateProductDto.stocktaking,
             minimumStock: updateProductDto.minimumStock,
-            entriy: updateProductDto.entriy + product.entriy ,
-           // output: updateProductDto.output
+            entriy: entriy,
+            // output: updateProductDto.output
         });
 
 
-        let purchaseTotalPrice = updateProductDto.purchasePrice * updateProductDto.stock;
+        // let purchaseTotalPrice = updateProductDto.purchasePrice * updateProductDto.stock;
+        const purchaseTotalPrice = parseFloat((updateProductDto.entriy * updateProductDto.purchasePrice).toFixed(2));
+
         const entry = {
             supplier: updateProductDto.supplier,
-            amount: updateProductDto.entriy,  
+            amount: updateProductDto.entriy,
             productId: product.id,
             purchasePrice: updateProductDto.purchasePrice,  // precio compra
-            purchaseTotalPrice: updateProductDto.entriy * updateProductDto.purchasePrice, 
+            purchaseTotalPrice: purchaseTotalPrice,
         };
         await this.entryRepository.save(entry);
-        
+
         // Actualiza los productos en el paquete si el producto es un paquete
         if (updateProductDto.howToSell === 'Paquete' && updateProductDto.packageContents) {
             // Primero elimina los productos del paquete anteriores
@@ -221,7 +237,60 @@ async createProduct(createProductDto: CreateProductDto) {
         }
 
         // Devuelve el producto actualizado
-        console.log(`Lo que  SE ENVIO A ACTIUALIZAR ${updateProductDto.entriy}` )
+        console.log(`Lo que  SE ENVIO A ACTIUALIZAR ${updateProductDto.entriy}`)
+        return this.productRepository.findOne({ where: { barcode } });
+    }
+
+    async updateProduct(barcode: string, updateProductDto: UpdateProductDto) {
+        // Encuentra el producto por el código de barras
+
+        const product = await this.productRepository.findOne({
+            where: { barcode }
+        });
+        console.log(`PRODUCTO desde base A stock ${product.stock} entradas = ${product.entriy} Salidas = ${product.output}`)
+        console.log(`datos que se envian         ${updateProductDto.stock} entradas = ${updateProductDto.entriy} Salidas = ${updateProductDto.output}`)
+        if (!product) {
+            throw new NotFoundException('Product does not exist');
+        }
+
+        // Actualiza el producto con los campos proporcionados en el DTO
+        await this.productRepository.update(product.id, {
+            description: updateProductDto.description,
+            price: updateProductDto.price,
+            stock: updateProductDto.stock,
+            imgUrl: updateProductDto.imgUrl,
+            name: updateProductDto.name,
+            categoryId: updateProductDto.categoryId,
+            barcode: updateProductDto.barcode,
+            howToSell: updateProductDto.howToSell,
+            purchasePrice: updateProductDto.purchasePrice,
+            wholesalePrice: updateProductDto.wholesalePrice,
+            stocktaking: updateProductDto.stocktaking,
+            minimumStock: updateProductDto.minimumStock,
+            entriy: updateProductDto.entriy,
+            // output: updateProductDto.output
+        });
+
+
+        let purchaseTotalPrice = updateProductDto.purchasePrice * updateProductDto.stock;
+
+
+        // Actualiza los productos en el paquete si el producto es un paquete
+        if (updateProductDto.howToSell === 'Paquete' && updateProductDto.packageContents) {
+            // Primero elimina los productos del paquete anteriores
+            await this.packageProductRepository.delete({ packageId: product.id });
+
+            // Luego, guarda los nuevos productos del paquete
+            for (const item of updateProductDto.packageContents) {
+                const packageProduct = new PackageProduct();
+                packageProduct.productId = item.productId;
+                packageProduct.quantity = item.quantity;
+                packageProduct.packageId = product.id; // ID del paquete es el ID del producto actualizado
+                await this.packageProductRepository.save(packageProduct);
+            }
+        }
+
+        // Devuelve el producto actualizado
         return this.productRepository.findOne({ where: { barcode } });
     }
 

@@ -1,0 +1,708 @@
+id,barcode,name,price,stock,description,purchasePrice,categoryId,wholesaPrice,howToSell,isActive,entry,output,imgUrl,stocktaking,minimumstock
+1,7.501E+12,Nito,6,0,Cont. Neto 62g,4.86,1,4.8,Unidad,1,0,0,default.png,1,1
+2,7.501E+12,Donitas espolvoreadas,10,0,6 piezas Cont. neto 105 g,7.64,1,8,Unidad,1,0,0,default.png,1,1
+3,7.50103E+12,Dona,3,0,1 pieza cont. neto 26 g,2.28,1,2.4,Unidad,1,0,0,default.png,1,1
+4,7.501E+12,Rebanadas,5,0,2 piezas cont. neto 55g,3.78,1,4,Unidad,1,0,0,default.png,1,1
+5,7.501E+12,mantecadas,11,0,4 piezas cont. neto 125g,8.38,1,8.8,Unidad,1,0,0,default.png,1,1
+6,7.501E+12,PingÇ¯inos,10,0,2 piezas cont. neto 80 g,7.41,1,8,Unidad,1,0,0,default.png,1,1
+7,75002275,Choco Roles,10,0,sabor piÇña 2 piezas 80g,7.5,1,8,Unidad,1,0,0,default.png,1,1
+8,7.501E+12,Dalmata,6,0,Cont. Neto 55g,4.54,1,4.8,Unidad,1,0,0,default.png,1,1
+9,7.501E+12,Barritas PiÇña,8,-2,2 piezas cont. neto 67 g,6.25,1,6.4,Unidad,1,0,0,default.png,1,1
+10,7.501E+12,Barritas Fresa,8,0,2 piezas cont. neto 67 g,6.25,1,6.4,Unidad,1,0,0,default.png,1,1
+11,7.501E+12,Gansito,0,0,Gansito,0,1,0,Unidad,1,0,0,default.png,1,1
+12,7.50103E+12,Mantecada,3,0,Cont. neto 31 g,2.46,1,2.4,Unidad,1,0,0,default.png,1,1
+13,7.50103E+12,Principe Limon,10,0,10 piezas 106g,7.78,1,8,Unidad,1,0,0,default.png,1,1
+14,7.501E+12,Principe Chocolate,10,0,10 piezas 106g,8.41,1,8,Unidad,1,0,0,default.png,1,1
+15,7.501E+12,Principe Chocolate blanco,10,0,10 piezas 110g,7.78,1,8,Unidad,1,0,0,default.png,1,1
+16,7.50103E+12,Canelitas,8,0,9 piezas 90g,6.25,1,6.4,Unidad,1,0,0,default.png,1,1
+17,7.501E+12,Triki Trakes,8,0,8 piezas 69g,6.15,1,6.4,Unidad,1,0,0,default.png,1,1
+19,1,Impresion Carta 1,1,235,Impresion Carta 1,0.14,8,0.8,Paquete,0,0,0,default.png,1,1
+20,2,Impresion Carta 2,2,13,Impresion Carta 2,0.14,8,1.6,Paquete,0,0,0,default.png,1,1
+21,3,Impresion Carta 3,3,-435,Impresion Carta 3,0.14,8,2.4,Paquete,0,0,0,default.png,1,1
+22,4,Impresion Carta 4,4,1,Impresion Carta 4,0.14,8,3.2,Paquete,0,0,0,default.png,1,1
+23,5,Impresion Carta 5,5,8,Impresion Carta 5,0.14,8,4,Paquete,0,0,0,default.png,1,1
+24,6,Impresion carta 6,6,-8,Impresion carta 6,0.14,8,4.8,Paquete,0,0,0,default.png,1,1
+25,7,Impresion carta 7,7,0,Impresion carta 7,0.14,8,5.6,Paquete,0,0,0,default.png,1,1
+26,8,Impresion carta 8,8,2,Impresion carta 8,0.14,8,6.4,Paquete,0,0,0,default.png,1,1
+27,9,Impresion carta 9,9,-7,Impresion carta 9,0.14,8,7.2,Paquete,0,0,0,default.png,1,1
+28,10,Impresion carta 10,10,9,Impresion carta 10,0.14,8,8,Paquete,0,0,0,default.png,1,1
+29,11,Impresion Carta 0.50,0.5,-165,Impresion Carta 0.50,0.14,8,0.4,Paquete,0,0,0,default.png,1,1
+30,100,Impresion Hp 4 Pro 8610,4,999376,Impresora Hp Officejet Pro 8610,0,8,3.2,Unidad,1,0,0,default.png,1,1
+31,101,Impresion Hp 5  Pro 8610,5,998832,Impresora Hp Officejet Pro 8610,0,8,4,Unidad,1,0,0,default.png,1,1
+32,102,Impresion Hp 6 Pro 8610,6,999886,Impresora Hp Officejet Pro 8610,0,8,4.8,Unidad,1,0,0,default.png,1,1
+33,103,Impresion Hp 7  Pro 8610,7,999897,Impresora Hp Officejet Pro 8610,0,8,5.6,Unidad,1,0,0,default.png,1,1
+34,104,Impresion Hp 8 Pro 8610,8,999920,Impresora Hp Officejet Pro 8610,0,8,6.4,Unidad,1,0,0,default.png,1,1
+35,105,Impresion Hp 9 Pro 8610,9,999959,Impresora Hp Officejet Pro 8610,0,8,7.2,Unidad,1,0,0,default.png,1,1
+36,106,Impresion Hp 10  Pro 8610,10,999681,Impresora Hp Officejet Pro 8610,0,8,8,Unidad,1,0,0,default.png,1,1
+37,107,Copia Hp 1.5  Pro 8610,1.5,997805,Impresora Hp Officejet Pro 8610,0,4,1.2,Unidad,1,0,0,default.png,1,1
+38,108,Copia Hp 2  Pro 8610,2,993893,Impresora Hp Officejet Pro 8610,0,4,1.6,Unidad,1,0,0,default.png,1,1
+39,7.501E+12,Bran friut,6,0,bimbo,4.58,1,4.8,Unidad,1,0,0,default.png,1,1
+40,5000,No usar,0,0,No usar,2.75,5,0,Unidad,1,0,0,default.png,1,1
+41,5001,Sacapuntas MAE,3,13,Sacapuntas MAE,1.62,5,2.4,Unidad,1,0,0,default.png,1,1
+43,5002,cinta,3,0,cinta,1.53,5,2.4,Unidad,1,0,0,default.png,1,1
+44,5003,Regla plastico 30 cm Strike is,6,13,Regla plastico 30 cm Strike is,3.66,5,4.8,Unidad,1,0,0,default.png,1,1
+46,5004,Marcatextos A-ink y Pelikan,18,31,Marcatextos A-ink y Pelikan,15,5,14.4,Unidad,1,0,0,default.png,1,1
+47,7.5012E+12,Pegamento Bully 35g,11,0,Pegamento Bully 35g,7.2,5,8.8,Unidad,1,0,0,default.png,1,1
+48,7.50129E+12,Pegamento makyco 30gr,13,0,Pegamento makyco 30gr,7,5,10.4,Unidad,1,0,0,default.png,1,1
+49,7.50102E+12,Borrador pelican m40,4,-1,Borrador pelican m40,2.5,5,3.2,Unidad,1,0,0,default.png,1,1
+50,7.50102E+12,Borrador pelican m20,9,-3,Borrador pelican m20,4.57,5,7.2,Unidad,1,0,0,default.png,1,1
+51,7.50115E+12,Colores mapita largos c/12,31,0,Colores mapita largos c/12,20,5,24.8,Unidad,1,0,0,default.png,1,1
+52,7.50115E+12,Colores mapita cortos,17,2,Colores mapita cortos,10,5,13.6,Unidad,1,0,0,default.png,1,1
+53,5005,Cartulina blanca,5,98,Cartulina blanca,1.69,5,4,Unidad,1,0,0,default.png,1,1
+54,7.50221E+12,no usar,0,0,no usar,0,5,0,Unidad,1,0,0,default.png,1,1
+55,5006,Diamantina sobre,6,37,Diamantina sobre,3.2,5,4.8,Unidad,1,0,0,default.png,1,1
+56,7.50101E+12,DESUSO 01,0,-1,DESUSO 01,0,9,0,Unidad,1,0,0,default.png,1,1
+57,7.50101E+12,desuso 02,0,0,desuso 02,0,9,0,Unidad,1,0,0,default.png,1,1
+58,7.50101E+12,desuso 03,0,0,desuso 03,0,9,0,Unidad,1,0,0,default.png,1,1
+59,7.50101E+12,No usar,0,0,No usar,0,5,0,Unidad,1,0,0,default.png,1,1
+60,7.50101E+12,No usar,0,6,No usar,0,5,0,Unidad,1,0,0,default.png,1,1
+61,7.50101E+12,NO usar,0,0,NO usar,0,5,0,Unidad,1,0,0,default.png,1,1
+62,5007,Carpeta carta pastel,5,-11,Carpeta carta pastel,1.9,5,4,Unidad,1,0,0,default.png,1,1
+63,5008,Carpeta carta Color fuerte,6,48,Carpeta carta Color fuerte,2.41,5,4.8,Unidad,1,0,0,default.png,1,1
+64,5009,Hoja color,1,45,Hoja color,0.59,5,0.8,Unidad,1,0,0,default.png,1,1
+66,5010,sobre bolsa carta 230*305,8,-1,sobre bolsa carta 230*305,7.96,5,6.4,Unidad,1,0,0,default.png,1,1
+67,7.50159E+12,No usar,12,0,No usar,0,5,9.6,Unidad,1,0,0,default.png,1,1
+69,6.02776E+12,No usar,19,0,No usar,13.5,5,15.2,Unidad,1,0,0,default.png,1,1
+70,6.0276E+11,No usar,19,0,No usar,14.5,5,15.2,Unidad,1,0,0,default.png,1,1
+71,5011,Pincel,4,122,Pincel,1.36,5,3.2,Unidad,1,0,0,default.png,1,1
+73,7.50129E+12,Crayones Makyco grueso 12  OK,48,3,Crayones Makyco grueso 12  OK,28,5,38.4,Unidad,1,0,0,default.png,1,1
+75,4.97405E+12,Marcador Artline 109 permanente VARIOS COLORES,22,-2,Marcador Artline 109 permanente VARIOS COLORES,12.5,5,17.6,Unidad,1,0,0,default.png,1,1
+76,4.97405E+12,NO USAR,0,0,NO USAR,0,5,0,Unidad,1,0,0,default.png,1,1
+78,7.50129E+12,plastilina barra makyco,16,51,plastilina barra makyco,9,5,12.8,Unidad,1,0,0,default.png,1,1
+80,7.50129E+12,Pegamento Makyco 60 gramos,17,5,Pegamento Makyco 60 gramos,9.5,5,13.6,Unidad,1,0,0,default.png,1,1
+82,7.50131E+12,Lapiz adhesivo top,14,30,Lapiz adhesivo top,7.6,5,11.2,Unidad,1,0,0,default.png,1,1
+83,7.50221E+12,Lapiz adhesivo mae 9 g,10,-11,Lapiz adhesivo mae 9 g,5.6,5,8,Unidad,1,0,0,default.png,1,1
+85,7.50171E+12,corrector 10ml,16,-4,escrimex,11.5,5,12.8,Unidad,1,0,0,default.png,1,1
+86,7.50224E+11,corrector cpm-8   8 ml,14,0,MAE,10,5,11.2,Unidad,1,0,0,default.png,1,1
+87,6.96626E+11,Pintura Tempere 30 ml createx,6,4,lavable para carteles,5.4,5,4.8,Unidad,1,0,0,default.png,1,1
+88,5012,Opalina delgada blanca 115 g/m2,1,-1,Opalina delgada blanca 115 g/m2,0.6,5,0.8,Unidad,1,0,0,default.png,1,1
+90,5013,Opalina Gruesa,2,24,Opalina Gruesa,1.12,5,1.6,Unidad,1,0,0,default.png,1,1
+91,5014,Papel manila,3,42,color amarillo,1.4,5,2.4,Unidad,1,0,0,default.png,1,1
+93,5015,Pegamento makyco 20g,3,0,boto blanco sin marca,1,5,2.4,Unidad,1,0,0,default.png,1,1
+95,5016,Tabla fibracel 30x30,15,-7,Tabla fibracel 30x30,9.65,5,12,Unidad,1,0,0,default.png,1,1
+96,6.0276E+11,Cuaderno frances,28,5,Cuaderno frances,16.97,5,22.4,Unidad,1,0,0,default.png,1,1
+97,7.50103E+12,Galletas Panditas,7,0,Marinela,5,1,5.6,Unidad,1,0,0,default.png,1,1
+98,7.50227E+12,Lapiz MAE OK,7,35,Lapiz MAE OK,3.82,5,5.6,Unidad,1,0,0,default.png,1,1
+99,1200,Copia Hp 3  Pro 8610,3,999825,Impresora Hp Officejet Pro 8610,0,4,2.4,Unidad,1,0,0,default.png,1,1
+100,6.92205E+12,Foamy tamaño carta liso OK,3,-55,Foamy tamaño carta liso OK,1.28,5,2.4,Unidad,1,0,0,default.png,1,1
+101,7.50224E+11,0,11,0,0,7.2,5,8.8,Unidad,1,0,0,default.png,1,1
+102,120314,Copia Hp 4  Pro 8610,4,999946,Impresora Hp Officejet Pro 8610,0,4,3.2,Unidad,1,0,0,default.png,1,1
+103,231501,Impresion Samsung M4072FD,1.5,999919,Impresora laser B&N,0,8,1.2,Unidad,1,0,0,default.png,1,1
+104,7.50224E+12,Colores MAE CM-12C,30,2,Colores MAE CM-12C,19,5,24,Unidad,1,0,0,default.png,1,1
+105,7.50129E+12,Plastilina Makyco c/10,20,1,Plastilina Makyco c/10,11.49,5,16,Unidad,1,0,0,default.png,1,1
+106,7.50224E+12,corrector liquido A-ink,17,0,punta 0.8 mm cont. Net. 8 ml,12.8,5,13.6,Unidad,1,0,0,default.png,1,1
+107,2030,No usar,0,0,No usar,3,5,0,Unidad,1,0,0,default.png,1,1
+108,2.01205E+12,12 plumones lavables saire,25,0,12 plumones lavables saire,15,5,20,Unidad,1,0,0,default.png,1,1
+109,12456,Carpeta oficio pastel,6,8,Carpeta oficio pastel,2.25,5,4.8,Unidad,1,0,0,default.png,1,1
+110,23455,Cartulina Fluorecente,10,12,Cartulina Fluorecente,5.35,5,8,Unidad,1,0,0,default.png,1,1
+111,1245242,Copia Hp 5  Pro 8610,5,999930,Impresora Hp Officejet Pro 8610,0,4,4,Unidad,1,0,0,default.png,1,1
+112,2724285190,dvd+R,10,0,Sony,6.7,5,8,Unidad,1,0,0,default.png,1,1
+113,27242254497,cd-r,10,0,700 mb sony,3.9,5,8,Unidad,1,0,0,default.png,1,1
+114,1099,Impresion Hp 2  Pro 8610,2,998835,Impresora Hp Officejet Pro 8610,0,8,1.6,Unidad,1,0,0,default.png,1,1
+115,9000,servicio,1,993436,servicio,0,6,0.8,Unidad,1,0,0,default.png,1,1
+116,9001,Servicio Tecnico,1,990267,Servicio Tecnico,0,7,0.8,Unidad,1,0,0,default.png,1,1
+117,9002,NO USAR,0,999883,NO USAR,0,6,0,Unidad,1,0,0,default.png,1,1
+118,90003,NO USAR,0,999529,NO USAR,0,6,0,Unidad,1,0,0,default.png,1,1
+119,90004,NO USAR,0,999836,NO USAR,0,6,0,Unidad,1,0,0,default.png,1,1
+120,90005,NO USAR,0,999959,NO USAR,0,6,0,Unidad,1,0,0,default.png,1,1
+121,7.50221E+12,broche metalico aink 80 MM,2,32,broche metalico aink 80 MM,0.64,5,1.6,Unidad,1,0,0,default.png,1,1
+122,7.50113E+12,no usar,0,0,no usar,0,5,0,Unidad,1,0,0,default.png,1,1
+123,7.50102E+12,Corrector liquido,13,0,Corrector liquido,8.5,5,10.4,Unidad,1,0,0,default.png,1,1
+124,7.50115E+12,Colores Blanca Nieves c/12 cortos,17,-1,Colores Blanca Nieves c/12 cortos,10,5,13.6,Unidad,1,0,0,default.png,1,1
+125,7.50224E+12,Lapiz adhesivo MAE 20 gr,18,0,Lapiz adhesivo MAE 20 gr,11.7,5,14.4,Unidad,1,0,0,default.png,1,1
+126,7.50102E+12,Marcador de Cera,10,0,Pelikan,8.34,5,8,Unidad,1,0,0,default.png,1,1
+127,9012121121,Papel China,2,107,Papel China,1.02,5,1.6,Unidad,1,0,0,default.png,1,1
+128,7.50227E+12,Silicon Liquido MAE 30 ml ok,21,0,Silicon Liquido MAE 30 ml ok,11.5,5,16.8,Unidad,1,0,0,default.png,1,1
+129,1.11111E+12,NO usar,0,-4,NO usar,3,5,0,Unidad,1,0,0,default.png,1,1
+130,7.50152E+12,Ficha bibliografica 5 x 8 raya,26,2,Ficha bibliografica 5 x 8 raya,1.46,5,20.8,Unidad,1,0,0,default.png,1,1
+131,3212121254,Lapiz Borrador oso,0,0,lapiz con borrador de osos,8,5,0,Unidad,1,0,0,default.png,1,1
+132,36785455,Sacapuntas Pencil Sharperner forma de Corona,0,6,En forma de Corona,4,5,0,Unidad,1,0,0,default.png,1,1
+133,23145414414,Sacapuntas de dinosaurio,0,6,ANI Sacapuntas en forma de dinosaurio,4,5,0,Unidad,1,0,0,default.png,1,1
+134,5.42554E+11,Borrador de biberon,0,0,Borrador de biberon,9,5,0,Unidad,1,0,0,default.png,1,1
+135,6.94008E+12,Sacapuntas  Forma de Hipopotamp,0,0,ANI Sacapuntas de en  forma de Hipopotamo,6,5,0,Unidad,1,0,0,default.png,1,1
+136,6.94008E+12,Sacapuntas en forma de cerdio,0,0,ANI sacapuntas en forma de cerdito,10,5,0,Unidad,1,0,0,default.png,1,1
+137,1.55422E+11,Borrador en forma de Lapices,0,0,ANI En forma de lapiz se intercambian,8,5,0,Unidad,1,0,0,default.png,1,1
+138,2452215,Crayolas en forma de bolita,0,0,ANI cada color es una bolita se vende por lapiz,5,5,0,Unidad,1,0,0,default.png,1,1
+139,3541712411,Posti,0,2,ANI Posti en forma de figuras de animales y frutas,5,5,0,Unidad,1,0,0,default.png,1,1
+140,2.54724E+11,Sacapuntas de carritos,0,0,ANI sacapuntas de carritos dobles,6,5,0,Unidad,1,0,0,default.png,1,1
+141,2.45521E+11,Borrador en forma de postre,0,0,Borrador en forma de postre,2,1,0,Unidad,1,0,0,default.png,1,1
+142,321711,Sobre Amarillo,6,-9,Sobre Amarillo,3.29,5,4.8,Unidad,1,0,0,default.png,1,1
+143,321898,No usar,0,0,No usar,0,5,0,Unidad,1,0,0,default.png,1,1
+144,231221111,Borrador en forma de postre,0,0,Borrador en forma de postre,2,5,0,Unidad,1,0,0,default.png,1,1
+145,4.97405E+12,NO USAR,0,0,NO USAR,0,5,0,Unidad,1,0,0,default.png,1,1
+146,7.50221E+12,Pegamento boliche 18 grs,3,11,Pegamento boliche 18 grs,1.65,5,2.4,Unidad,1,0,0,default.png,1,1
+147,251400010,Cartulina negra Iris,6,-4,Cartulina negra Iris,5.2,5,4.8,Unidad,1,0,0,default.png,1,1
+148,1002014,cartulina  pastel,6,14,cartulina  pastel,3,5,4.8,Unidad,1,0,0,default.png,1,1
+149,30001011,Copia Hp  1 Pro 8610,1,999529,Impresora Hp Officejet Pro 8610,0,4,0.8,Unidad,1,0,0,default.png,1,1
+150,7.50831E+12,"Ficcha bibliografica 3x5\"",0.25""",986,Tarjetas rayadas,0,5,0.2,Unidad,1,\N,0,0,default.png,1,1
+151,221212121,bolsa de plumas con 10,40,-1,s,28,5,32,Unidad,1,0,0,default.png,1,1
+152,7.70349E+12,Pluma kilometrico,6,36,Pluma kilometrico,2.98,5,4.8,Unidad,1,0,0,default.png,1,1
+153,1455001572,Lapiz PS-1P,2,38,lapices de figuras sin marca,0.5,5,1.6,Unidad,1,0,0,default.png,1,1
+154,7.50102E+12,plastilina barra  pelikan,20,7,plastilina barra  pelikan,12.65,5,20,Unidad,1,0,0,default.png,1,1
+155,7.70349E+12,trasparente,0,0,trasparente,0,5,0,Unidad,1,0,0,default.png,1,1
+156,7.50103E+12,paq. plumas Kilometricos surtido,40,0,bolsa con 1o plumas kilometrico surtido,33.5,5,32,Unidad,1,0,0,default.png,1,1
+157,55555512,Impresion Hp 0.50  Pro 8610,0.5,99374,Impresora Hp Officejet Pro 8610,0,8,0.4,Unidad,1,0,0,default.png,1,1
+158,7.50301E+12,Silicon liquido Shely,11,-2,Silicon liquido Shely,7,5,8.8,Unidad,1,0,0,default.png,1,1
+159,7.50301E+12,No usar,0,0,No usar,0,5,0,Unidad,1,0,0,default.png,1,1
+160,7.50603E+12,cuaderno con 70 hojas 11.9 x 21 cm,10,0,cuaderno con 70 hojas 11.9 x 21 cm,6,5,8,Unidad,1,0,0,default.png,1,1
+161,10000001,NO USAR,0,999942,NO USAR,0,7,0,Unidad,1,0,0,default.png,1,1
+162,1111111,Impresion Hp Pro 1.5  8610,1.5,999947,Impresora Hp Officejet Pro 8610,0,8,1.2,Unidad,1,0,0,default.png,1,1
+163,2121212121,Impresion Hp 3  Pro 8610,3,999594,Impresora Hp Officejet Pro 8610,0,8,2.4,Unidad,1,0,0,default.png,1,1
+164,33343434,adaptador micro sd forma huella,15,3,adaptador micro sd forma huella,5,9,7,Unidad,1,0,0,default.png,1,1
+165,22225121212,Cartoncillo negro,5,3,sin descripcion,2.5,5,4,Unidad,1,0,0,default.png,1,1
+166,3.52501E+12,Forro para folder tamaño carta,20,23,Forro para folder tamaño carta,9.2,5,20,Unidad,1,0,0,default.png,1,1
+167,21457220,Impresion Samsung M4072FD,1,998933,Impresora laser B&N,0,8,0.8,Unidad,1,0,0,default.png,1,1
+168,2011792214,NO USAR,0,999992,NO USAR,0,7,0,Unidad,1,0,0,default.png,1,1
+169,24545454,Ficha bibliografica 3x5 raya,18,2,Ficha bibliografica 3x5 raya,0.42,5,14.4,Unidad,1,0,0,default.png,1,1
+170,99,Impresion Hp 1  Pro 8610,1,998340,Impresora Hp Officejet Pro 8610,0,8,0.8,Unidad,1,0,0,default.png,1,1
+171,555512401,Copia Hp 0.50 Pro 8610,0.5,1000000,Impresora Hp Officejet Pro 8610,0,8,0.4,Unidad,1,0,0,default.png,1,1
+172,7.50228E+11,Corrector shely cuatitos,20,-13,Corrector shely cuatitos,18,5,16,Unidad,1,0,0,default.png,1,1
+173,7.50227E+12,Borrador para lapiz capuchon MAE,1,57,Borrador para lapiz capuchon MAE,0.34,5,0.8,Unidad,1,0,0,default.png,1,1
+174,6.92366E+12,Pincelin markana Pelikan agua,8,8,Pincelin markana Pelikan agua,5.1,5,6.4,Unidad,1,0,0,default.png,1,1
+175,3212145454,lapiz dixon Metrio 1910,4,57,lapiz dixon Metrio 1910,2.03,5,3.2,Unidad,1,0,0,default.png,1,1
+176,75020392,x,10,0,x,5.65,5,8,Unidad,1,0,0,default.png,1,1
+177,7.50301E+13,Pegamento shely 40 gr,8,-1,Pegamento shely 40 gr,4.2,5,6.4,Unidad,1,0,0,default.png,1,1
+178,200,Hoja blanca t/carta,0.5,-1576,Hoja blanca t/carta,0.14,5,0.4,Unidad,1,0,0,default.png,1,1
+179,300,Servicio Impresion,0.8,-76521,Servicio Impresion,0,8,0.64,Unidad,1,0,0,default.png,1,1
+180,201,Hoja t/oficio,0.5,380,Hoja t/oficio,20,5,0.4,Unidad,1,0,0,default.png,1,1
+181,14,Impresion Oficio 1.5,1.5,9999860,Impresion Oficio 1.5,0.19,8,1.2,Paquete,0,0,0,default.png,1,1
+182,12,Impresion Carta 1.50,1.5,21,Impresion Carta 1.50,0.14,8,1.2,Paquete,0,0,0,default.png,1,1
+183,15,Impresion Oficio 2,2,9999939,Impresion Oficio 2,0.19,8,1.6,Paquete,0,0,0,default.png,1,1
+184,900,Memoria USB adata 32 GB,150,0,Memoria USB adata 32 GB,79,9,110.6,Unidad,1,0,0,default.png,1,1
+185,202,3 hojas blancas carta,1,9999939,3 hojas blancas carta,0.42,5,0.8,Paquete,0,0,0,default.png,1,1
+186,8.69821E+12,no usar,0,-3,no usar,6.5,5,0,Unidad,1,0,0,default.png,1,1
+187,7.50221E+12,Tijera escolar aink,17,6,Tijera escolar aink,8.31,5,13.6,Unidad,1,0,0,default.png,1,1
+188,74061719827,Memoria USB KINGSTON 16 GB,110,0,Memoria USB KINGSTON 16 GB,56,9,78.4,Unidad,1,0,0,default.png,1,1
+189,4.71322E+12,Memoria USB ADATA 32 GB,140,0,Memoria USB ADATA 32 GB,72,9,100.8,Unidad,1,0,0,default.png,1,1
+190,7.40617E+11,micro SD Kingston 8 GB,80,2,micro SD Kingston 8 GB,42.5,9,59.5,Unidad,1,0,0,default.png,1,1
+191,7.50115E+12,Bicolor grueso Dixon,13,-8,Bicolor grueso Dixon,6.7,5,10.4,Unidad,1,0,0,default.png,1,1
+192,7.50115E+12,Bicolor delgado dixon  MAE,10,-6,Bicolor delgado dixon  MAE,5.58,5,8,Unidad,1,0,0,default.png,1,1
+193,16,Impresion oficio 1,1,9999976,Impresion oficio 1,0.19,8,0.8,Paquete,0,0,0,default.png,1,1
+194,7.50129E+12,Acuarelas 12 pastillas makyco,16,5,Acuarelas 12 pastillas makyco,9.5,5,12.8,Unidad,1,0,0,default.png,1,1
+195,7.50129E+12,Acuarelas 6 pastillas makyco,12,0,Acuarelas 6 pastillas makyco,6.8,5,9.6,Unidad,1,0,0,default.png,1,1
+196,7.50199E+12,Barra silicon,3,51,Barra silicon,1.3,5,2.4,Unidad,1,0,0,default.png,1,1
+197,7.50227E+12,Lapiz Duo Mae Lapiz duo Dixon Lapiz duo pelikan,10,42,Lapiz Duo Mae Lapiz duo Dixon Lapiz duo pelikan,5.22,5,8,Unidad,1,0,0,default.png,1,1
+198,7.50224E+12,Caja clip  # 1 c/100 A-iNk,18,5,Caja clip  # 1 c/100 A-iNk,9.67,5,14.4,Unidad,1,0,0,default.png,1,1
+199,112,Clip,0.2,-228,Clip,0.07,5,0.16,Unidad,1,0,0,default.png,1,1
+200,7.50227E+12,Diadema vorago 300c,160,0,Diadema vorago 300c,122.83,9,171.96,Unidad,1,0,0,default.png,1,1
+201,7.50227E+12,Diadema vorago 205,150,0,Diadema vorago 205,113.15,9,158.41,Unidad,1,0,0,default.png,1,1
+202,13,Impresion oficio 1,1,10000000,Impresion oficio 1,0.19,8,0.8,Paquete,0,0,0,default.png,1,1
+203,20,Producto prueba,0,98,Producto prueba,0,9,0,Unidad,1,0,0,default.png,1,1
+204,4.71344E+12,micro SD 32 gb adata,160,2,micro SD 32 gb adata,72,9,100.8,Unidad,1,0,0,default.png,1,1
+205,74061727464,micro sd 16 gb ADATA,150,0,micro sd 16 gb ADATA,79,9,110.6,Unidad,1,0,0,default.png,1,1
+206,3000,Cerillos,3,0,Cerillos,1.6,10,2.4,Unidad,0,0,0,default.png,1,1
+207,3001,Hormigas,4,0,Hormigas,2.5,10,3.2,Unidad,0,0,0,default.png,1,1
+208,7.50228E+12,Corrector brocha MAE CBM-2012,14,2,Corrector brocha MAE CBM-2012,7.59,5,11.2,Unidad,1,0,0,default.png,1,1
+209,7.50224E+12,Corrector Pluma MAE 8 ml CPM-8,22,0,Corrector Pluma MAE 8 ml CPM-8,15.2,5,17.6,Unidad,1,0,0,default.png,1,1
+210,3002,Bubbaloo,1,0,Bubbaloo,0.67,10,0.8,Unidad,0,0,0,default.png,1,1
+211,3003,Orbit varios sabores,2,0,Orbit varios sabores,0.94,10,1.6,Unidad,0,0,0,default.png,1,1
+212,3004,Mazapan Original 28 g,5,30,Mazapan Original 28 g,5,14,5,Unidad,1,0,0,default.png,1,1
+213,3005,Paleta de la Rosa,2,50,Paleta de la Rosa,1.2,10,1.6,Unidad,0,0,0,default.png,1,1
+214,3006,Ollitas paq c/3,2,0,Ollitas paq c/3,1.05,10,1.6,Unidad,0,0,0,default.png,1,1
+215,3007,Mazapan Gigante 50g,5,0,Mazapan Gigante 50g,3.75,10,4,Unidad,0,0,0,default.png,1,1
+216,3008,Dedos,5,0,Dedos,2.96,10,4,Unidad,0,0,0,default.png,1,1
+217,3009,Dartañan,3,0,Dartañan,1.88,10,2.4,Unidad,0,0,0,default.png,1,1
+218,3010,mini dedos,1.5,0,mini dedos,0.82,10,1.2,Unidad,0,0,0,default.png,1,1
+219,3011,Lucas Muecas,6.5,0,Lucas Muecas,4.5,10,5.2,Unidad,0,0,0,default.png,1,1
+220,3012,Mega Huevon,3,0,Mega Huevon,1.1,10,2.4,Unidad,0,0,0,default.png,1,1
+221,3013,Mini Pulparindo,2,0,Mini Pulparindo,1.1,10,1.6,Unidad,0,0,0,default.png,1,1
+222,3014,Marimbas,5,0,Marimbas,2.92,10,4,Unidad,0,0,0,default.png,1,1
+223,7.50609E+12,no usar,40,0,no usar,26,9,36.4,Unidad,1,0,0,default.png,1,1
+224,7.50609E+12,Audifonos Hands free Mitzu MH-0092WH,65,0,Audifonos Hands free Mitzu MH-0092WH,44,9,61.6,Unidad,1,0,0,default.png,1,1
+225,7.50609E+12,Audifonos in-ear mitzu MH-2014BL,35,0,Audifonos in-ear mitzu MH-2014BL,17,9,23.8,Unidad,1,0,0,default.png,1,1
+226,7.50609E+12,cable micro usb green leaf  18-1402k2,35,0,cable micro usb green leaf  18-1402k2,17,9,23.8,Unidad,1,0,0,default.png,1,1
+227,4.89517E+12,Cargador Rapido link bits 2.0A ac008,45,2,Cargador Rapido link bits 2.0A ac008,26,9,36.4,Unidad,1,0,0,default.png,1,1
+228,ELEWI963201811165K,CABLE AUXILIAR 3.5 ELE-GATE,45,0,CABLE AUXILIAR 3.5 ELE-GATE,26,9,36.4,Unidad,1,0,0,default.png,1,1
+229,21890,Cable audio macho macho,20,1,Cable audio macho macho,5,9,7,Unidad,1,0,0,default.png,1,1
+230,1AV8HW01,Cargador micro usb V8 link bits AC005,36,1,Cargador micro usb V8 link bits AC005,18,9,25.2,Unidad,1,0,0,default.png,1,1
+231,4.89517E+12,Cargador tipo C link bitsAC001,50,1,Cargador tipo C link bitsAC001,23,9,32.2,Unidad,1,0,0,default.png,1,1
+232,16993,Lector memoria en forma de pie,15,9,Lector memoria en forma de pie,5,9,7,Unidad,1,0,0,default.png,1,1
+233,22380,Cable auxiliar CA-050,15,0,Cable auxiliar CA-050,6,9,8.4,Unidad,1,0,0,default.png,1,1
+234,6.9538E+12,Cable tipo C Sivivi CB109,35,1,Cable tipo C Sivivi CB109,15,9,21,Unidad,1,0,0,default.png,1,1
+235,7.50609E+12,Audifonos Hands free MITZU,70,0,Audifonos Hands free MITZU,44,9,61.6,Unidad,1,0,0,default.png,1,1
+236,7.50609E+12,Audifonos in-ear mitzu MH-2015RD,35,0,Audifonos in-ear mitzu MH-2015RD,20,9,28,Unidad,1,0,0,default.png,1,1
+237,7.50609E+12,Audifonos hands free Azul Mitzu MH-0032BL,45,0,Audifonos hands free Azul Mitzu MH-0032BL,25,9,35,Unidad,1,0,0,default.png,1,1
+238,7.50609E+12,Audifonos hands free ROJO Mitzu MH-0032PK,45,0,Audifonos hands free ROJO Mitzu MH-0032PK,25,9,35,Unidad,1,0,0,default.png,1,1
+239,4.89517E+12,Cargador Rapido Modelo AC003 link bits,60,1,Cargador Rapido Modelo AC003 link bits,38,9,53.2,Unidad,1,0,0,default.png,1,1
+240,7.50609E+12,cable micro usb green leaf  18-1402PR,35,2,cable micro usb green leaf  18-1402PR,17,9,23.8,Unidad,1,0,0,default.png,1,1
+241,3015,Chutazo,5,0,Chutazo,3.09,10,4,Unidad,0,0,0,default.png,1,1
+242,6.9538E+12,Audifonos Sivivi AU402,35,0,Audifonos Sivivi AU402,15,9,21,Unidad,1,0,0,default.png,1,1
+243,6.9538E+12,no usar,40,0,no usar,18,9,25.2,Unidad,1,0,0,default.png,1,1
+244,7.50609E+12,Audifonos in-ear,35,0,Audifonos in-ear,17,9,23.8,Unidad,1,0,0,default.png,1,1
+245,22145,cable usb modelo SJN-C030804,70,0,cable usb modelo SJN-C030804,42,9,58.8,Unidad,1,0,0,default.png,1,1
+246,7.50046E+12,MIcro SD card 16 GB blackpcs,140,2,MIcro SD card 16 GB blackpcs,70,9,98,Unidad,1,0,0,default.png,1,1
+247,7.50046E+12,Memoria USB 16 GB Blackpcs model MU2107,120,0,Memoria USB 16 GB Blackpcs model MU2107,62,9,86.8,Unidad,1,0,0,default.png,1,1
+248,7.50609E+12,Audifonos hands Free MH-0092BL,85,0,Audifonos hands Free MH-0092BL,53,9,74.2,Unidad,1,0,0,default.png,1,1
+249,7.50609E+12,Audifonos hands free MH-0014BL,55,0,Audifonos hands free MH-0014BL,34,9,47.6,Unidad,1,0,0,default.png,1,1
+250,7.50061E+13,Audifonos IN-EAR MH-2015BK,35,0,Audifonos IN-EAR MH-2015BK,18,9,25.2,Unidad,1,0,0,default.png,1,1
+251,3016,Paleta de Mango,2,0,Paleta de Mango,1.24,10,1.6,Unidad,0,0,0,default.png,1,1
+252,7.50609E+12,Cargador USB pared IP-6000BK,40,-1,Cargador USB pared IP-6000BK,20,9,28,Unidad,1,0,0,default.png,1,1
+253,4.89517E+12,Cargador V8 Modelo AC013,70,0,Cargador V8 Modelo AC013,36,9,50.4,Unidad,1,0,0,default.png,1,1
+254,3017,Japoneses 13 g,3,0,Japoneses 13 g,0.72,10,2.4,Unidad,0,0,0,default.png,1,1
+255,6.9538E+12,Auriculares Sivivi AU416,45,1,Auriculares Sivivi AU416,24,9,33.6,Unidad,1,0,0,default.png,1,1
+256,22143,Cargador de pared Modelo SJN-L189 LINK BITS,80,2,Cargador de pared Modelo SJN-L189 LINK BITS,48,9,67.2,Unidad,1,0,0,default.png,1,1
+257,3018,Paleta Sandia,2,0,Paleta Sandia,1.5,10,1.6,Unidad,0,0,0,default.png,1,1
+258,3019,Bocadin,2,0,Bocadin,1.2,10,1.6,Unidad,0,0,0,default.png,1,1
+259,6.9538E+12,Audifonos Sivivi AU408,40,0,Audifonos Sivivi AU408,17,9,23.8,Unidad,1,0,0,default.png,1,1
+260,6.9538E+12,Cable datos tipo C Sivivi CB164,30,1,Cable datos tipo C Sivivi CB164,13,9,18.2,Unidad,1,0,0,default.png,1,1
+261,6.9538E+12,Cable datos para ios Sivivi CB162,30,1,Cable datos para ios Sivivi CB162,13,9,18.2,Unidad,1,0,0,default.png,1,1
+262,6.9538E+12,Cable datos tipo v8   Sivivi CB163,30,4,Cable datos tipo v8   Sivivi CB163,13,9,18.2,Unidad,1,0,0,default.png,1,1
+263,6.9538E+12,Auriculares Sivivi AU420,55,0,Auriculares Sivivi AU420,27,9,37.8,Unidad,1,0,0,default.png,1,1
+264,25746,Manos libres m3,60,1,Manos libres m3,29,9,40.6,Unidad,1,0,0,default.png,1,1
+265,4.89517E+12,cargador micro usb v8 modelo AC006,40,2,cargador micro usb v8 modelo AC006,18,9,25.2,Unidad,1,0,0,default.png,1,1
+266,6.9538E+12,Auriculares Sivivi AU417,55,1,Auriculares Sivivi AU417,26,9,36.4,Unidad,1,0,0,default.png,1,1
+267,6.99538E+13,Auriculares Sivivi AU419,55,2,Auriculares Sivivi AU419,27,9,37.8,Unidad,1,0,0,default.png,1,1
+268,6.9538E+12,Diadema Sivivi AU410,150,0,Diadema Sivivi AU410,72,9,100.8,Unidad,1,0,0,default.png,1,1
+269,7.50046E+12,Memoria USB 16 GB blackpcs 18539,125,2,Memoria USB 16 GB blackpcs 18539,62,9,86.8,Unidad,1,0,0,default.png,1,1
+270,7.50046E+12,Memoria USB 32 GB Blackpcs 18538,160,-1,Memoria USB 32 GB Blackpcs 18538,78,9,109.2,Unidad,1,0,0,default.png,1,1
+271,74061725563,Memoria USB Kingston 16 GB dataTraveler 50,150,0,Memoria USB Kingston 16 GB dataTraveler 50,75,9,105,Unidad,1,0,0,default.png,1,1
+272,4.71344E+12,Micro SD 16 GB Adata,150,1,Micro SD 16 GB Adata,79,9,110.6,Unidad,1,0,0,default.png,1,1
+273,7.50123E+12,Silicon liquido Selanusa 30 ml,11,13,Silicon liquido Selanusa 30 ml,6.77,5,8.8,Unidad,1,0,0,default.png,1,1
+274,11111,Solicitud de empleo,2,133,Solicitud de empleo,0.96,5,1.6,Unidad,1,0,0,default.png,1,1
+275,7.50102E+12,borrador WS 60,3,46,borrador WS 60,1.65,5,2.4,Unidad,1,0,0,default.png,1,1
+276,24474393444,Jugo Cosecha Pura,5,0,Jugo Cosecha Pura,4.3,10,4,Unidad,1,0,0,default.png,1,1
+277,7.50102E+12,epurita con jugo,8,0,epurita con jugo,5.1,10,6.4,Unidad,1,0,0,default.png,1,1
+278,22745,Manos libres I7S tws,180,0,Manos libres I7S tws,95,9,133,Unidad,1,0,0,default.png,1,1
+279,7.50228E+12,Pistola de silicon SHELY,70,0,Pistola de silicon SHELY,41.5,5,56,Unidad,1,0,0,default.png,1,1
+280,6.90917E+12,Cable cargador XFC-14,30,-1,Cable cargador XFC-14,23,9,32.2,Unidad,1,0,0,default.png,1,1
+281,6.90917E+11,cable cargador XFC-4,30,1,cable cargador XFC-4,14,9,19.6,Unidad,1,0,0,default.png,1,1
+282,7E+12,cable cargador XFC-4 tipo C,30,-2,cable cargador XFC-4 tipo C,23,9,32.2,Unidad,1,0,0,default.png,1,1
+283,6.90917E+12,cable cargador tipo C,45,1,cable cargador tipo C,23,9,32.2,Unidad,1,0,0,default.png,1,1
+284,4.89517E+12,Cargador de pared AC011,50,0,Cargador de pared AC011,27,9,37.8,Unidad,1,0,0,default.png,1,1
+285,6.90917E+12,Cable de datos y carga XFC-6,30,0,Cable de datos y carga XFC-6,20,9,28,Unidad,1,0,0,default.png,1,1
+286,4.89517E+12,Cargador de pared,35,2,Cargador de pared,18,9,25.2,Unidad,1,0,0,default.png,1,1
+287,218901,cable audio macho a macho,15,0,cable audio macho a macho,20,9,28,Unidad,1,0,0,default.png,1,1
+288,6.90917E+12,Cable datos tipo C XFC-9,30,-2,Cable datos tipo C XFC-9,14,9,19.6,Unidad,1,0,0,default.png,1,1
+289,3020,Pulparindo Original,2,0,Pulparindo Original,1.32,10,1.6,Unidad,1,0,0,default.png,1,1
+290,17,Impresion 0.80,0.8,0,Impresion 0.80,0.14,8,0.64,Paquete,0,0,0,default.png,1,1
+291,7.501E+12,Mamut mini,3,27,Mamut mini,3,14,3,Unidad,1,0,0,default.png,1,1
+292,7.501E+12,Mamut,5,0,Mamut,3.46,10,4,Unidad,0,0,0,default.png,1,1
+293,2520609,Duvalin Bi sabor,2,0,Duvalin Bi sabor,0.72,10,1.6,Unidad,0,0,0,default.png,1,1
+294,7.24869E+11,Cacahuate Japones 42 g,5,0,Cacahuate Japones 42 g,2.82,10,4,Unidad,0,0,0,default.png,1,1
+295,7.50046E+12,Memoria USB 16 GB modelo MU2108,80,-1,Memoria USB 16 GB modelo MU2108,65,9,91,Unidad,1,0,0,default.png,1,1
+296,6.99999E+12,Cable de datos XFC-13,30,0,Cable de datos XFC-13,14,9,19.6,Unidad,1,0,0,default.png,1,1
+297,8.59733E+11,USB 16 GB HYUNDAI,150,0,USB 16 GB HYUNDAI,83,9,116.2,Unidad,1,0,0,default.png,1,1
+298,22142,SJN-L187 CARGADOR DE PARED,95,0,SJN-L187 CARGADOR DE PARED,59,9,82.6,Unidad,1,0,0,default.png,1,1
+299,4.89517E+12,CARGADOR AUTO,36,0,CARGADOR AUTO,18,9,25.2,Unidad,1,0,0,default.png,1,1
+300,7.40617E+11,Micro SD Kingston 32 GB,160,0,Micro SD Kingston 32 GB,78,9,109.2,Unidad,1,0,0,default.png,1,1
+301,4.89517E+12,Cargador Rapido TIANLAI modelo TAC-03,50,1,Cargador Rapido TIANLAI modelo TAC-03,21,9,29.4,Unidad,1,0,0,default.png,1,1
+302,4.89517E+12,cargador rapido 2.4 A MODELO TAC-01,40,-1,cargador rapido 2.4 A MODELO TAC-01,17,9,23.8,Unidad,1,0,0,default.png,1,1
+303,78951213221,Bic punto mediano,6,-62,Bic punto mediano,3.14,5,4.8,Unidad,1,0,0,default.png,1,1
+304,7.50131E+12,Lapiz adhesivo TOP 21gr,25,10,Lapiz adhesivo TOP 21gr,20,5,20,Unidad,1,0,0,default.png,1,1
+305,7.50046E+12,Micro SD Blackpcs 8 GB,100,0,Micro SD Blackpcs 8 GB,55,9,77,Unidad,1,0,0,default.png,1,1
+306,7.50143E+12,pluma punto fino Razor,6,-9,pluma punto fino Razor,3,5,4.8,Unidad,1,0,0,default.png,1,1
+307,6.97172E+12,Audifonos scncy stereo headphone,60,2,Audifonos scncy stereo headphone,23,9,32.2,Unidad,1,0,0,default.png,1,1
+308,6.97107E+12,audifonos scncy k38,60,0,audifonos scncy k38,23,9,32.2,Unidad,1,0,0,default.png,1,1
+309,6.92035E+12,audifonos modelo s25 scncy,40,2,audifonos modelo s25 scncy,15,9,21,Unidad,1,0,0,default.png,1,1
+311,4.89517E+12,Cargador link bits modelo AC009,40,4,Cargador link bits modelo AC009,18,9,25.2,Unidad,1,0,0,default.png,1,1
+312,7.50046E+12,Micro SD 32 GB blackpcs,140,0,Micro SD 32 GB blackpcs,73,9,102.2,Unidad,1,0,0,default.png,1,1
+313,7E+12,Cable datos V8 XFC-8,40,3,Cable datos V8 XFC-8,23,9,32.2,Unidad,1,0,0,default.png,1,1
+317,400,NO USAR,0,6,NO USAR,0,5,0,Granel,0,0,0,default.png,1,1
+318,401,No usar,0,14,No usar,6,5,0,Unidad,1,0,0,default.png,1,1
+319,7.50113E+12,Cable de carga V8,30,0,Cable de carga V8,12,9,16.8,Unidad,1,0,0,default.png,1,1
+320,310,Maicitos,11,2,Maicitos,10,10,8.8,Unidad,1,0,0,default.png,1,1
+321,301,Cordon para gafete,4,15,Cordon para gafete,1.79,5,3.2,Unidad,1,0,0,default.png,1,1
+322,302,broche p/gafete de metal y plastico,6,12,broche p/gafete de metal y plastico,2.9,5,4.8,Unidad,1,0,0,default.png,1,1
+323,7.50227E+12,Bicolor MAE grueso,13,1,Bicolor MAE grueso,7.47,5,10.4,Unidad,1,0,0,default.png,1,1
+324,7.50221E+11,tijeras MAE MT-5R,20,-9,tijeras MAE MT-5R,10.5,5,16,Unidad,1,0,0,default.png,1,1
+325,305,Navaja para cutter grande SHELY,4,9,Navaja para cutter grande SHELY,1.25,5,3.2,Unidad,1,0,0,default.png,1,1
+326,600,sobre c/50,40,0,sobre c/50,37.5,5,32,Unidad,1,0,0,default.png,1,1
+327,7.50228E+12,Despachador para cinta,83,1,Despachador para cinta,55,5,66.4,Unidad,1,0,0,default.png,1,1
+328,601,Papel lustre,5,7,Papel lustre,2.25,5,4,Unidad,1,0,0,default.png,1,1
+329,602,100 hojas blancas,30,10000000,100 hojas blancas,16,8,24,Paquete,0,0,0,default.png,1,1
+330,7.50227E+12,Marcador para pintarron AINK OK,17,6,Marcador para pintarron AINK OK,38.21,5,13.6,Unidad,1,0,0,default.png,1,1
+331,7.50046E+12,Cuaderno cosido italiano,40,7,Cuaderno cosido italiano,27,5,32,Unidad,1,0,0,default.png,1,1
+332,7.50159E+12,Cuaderno italiano,30,24,Cuaderno italiano,21.25,5,24,Unidad,1,0,0,default.png,1,1
+333,7.503E+12,Escuadra,10,-1,Escuadra,6,5,8,Unidad,1,0,0,default.png,1,1
+334,7.50227E+12,Marcador de cera pelikan aink,19,9,Marcador de cera pelikan aink,8.13,5,15.2,Unidad,1,0,0,default.png,1,1
+335,6003,Regla 30 cm metal,15,17,Regla 30 cm metal,10,5,12,Unidad,1,0,0,default.png,1,1
+336,7.50046E+12,Cuaderno profesional Cosido,49,4,Cuaderno profesional Cosido,29.17,5,39.2,Unidad,1,0,0,default.png,1,1
+337,7.50102E+12,Acuarelas pelican c/6,18,5,Acuarelas pelican c/6,9.6,5,14.4,Unidad,1,0,0,default.png,1,1
+338,7.50102E+12,Acuarelas pelikan,26,3,Acuarelas pelikan,13.01,5,20.8,Unidad,1,0,0,default.png,1,1
+339,7.50221E+12,sobre plastico MAE  tamaño carta,26,-9,sobre plastico MAE  tamaño carta,15,5,20.8,Unidad,1,0,0,default.png,1,1
+340,7.50221E+12,sobre plastico MAE tamaño oficio,29,-3,sobre plastico MAE tamaño oficio,16.5,5,23.2,Unidad,1,0,0,default.png,1,1
+341,7.50159E+12,0,0,50,0,13.16,5,0,Unidad,1,0,0,default.png,1,1
+342,6010,Carpeta OFICIO Color fuerte,7,24,Carpeta OFICIO Color fuerte,3.5,5,5.6,Unidad,1,0,0,default.png,1,1
+343,6012,Cartulina IRIS,13,43,Cartulina IRIS,6.6,5,10.4,Unidad,1,0,0,default.png,1,1
+344,6020,Abaco Grande,40,3,Abaco Grande,23,5,32,Unidad,1,0,0,default.png,1,1
+345,6021,Abaco Mediano,33,4,Abaco Mediano,23,5,26.4,Unidad,1,0,0,default.png,1,1
+346,1086,Juego de geometria GRANDE,39,0,Juego de geometria GRANDE,23.8,5,31.2,Unidad,1,0,0,default.png,1,1
+347,1087,Juego de geometria MEDIANO,27,0,Juego de geometria MEDIANO,17.5,5,21.6,Unidad,1,0,0,default.png,1,1
+348,598,compas arcoiris modelo 0598,24,3,compas arcoiris modelo 0598,15,5,19.2,Unidad,1,0,0,default.png,1,1
+349,7.50227E+12,compas de precision MAE cpp-2,26,5,compas de precision MAE cpp-2,16,5,20.8,Unidad,1,0,0,default.png,1,1
+350,6.90024E+12,cutter GRANDE metalico,35,1,cutter GRANDE metalico,13.5,5,28,Unidad,1,0,0,default.png,1,1
+351,7.50222E+12,Cutter GRANDE plastico,15,1,Cutter GRANDE plastico,5.8,5,12,Unidad,1,0,0,default.png,1,1
+352,1.19693E+15,Cutter CHICO shely,10,8,Cutter CHICO shely,4.4,5,8,Unidad,1,0,0,default.png,1,1
+353,7.50631E+12,Silicon liquido selanusa 60,18,7,Silicon liquido selanusa 60,11.5,5,14.4,Unidad,1,0,0,default.png,1,1
+354,7.50123E+12,Silicon liquido selanusa 100 ml,27,0,Silicon liquido selanusa 100 ml,17.5,5,21.6,Unidad,1,0,0,default.png,1,1
+355,7.50123E+12,Silicon liquido selanusa 250 ml,55,0,Silicon liquido selanusa 250 ml,37.5,5,44,Unidad,1,0,0,default.png,1,1
+356,6023,contac x metros jumbo,11,-46.8,contac x metros jumbo,6,5,8.8,Granel,1,0,0,default.png,1,1
+357,6.92563E+12,Calculadora Kadizz kk-402A-C,30,0,Calculadora Kadizz kk-402A-C,18.6,5,24,Unidad,1,0,0,default.png,1,1
+358,6.95253E+12,Calculadora cientifica GADIZ GD-107,60,0,Calculadora cientifica GADIZ GD-107,36.5,5,48,Unidad,1,0,0,default.png,1,1
+359,4.54953E+12,Calculadora cientifica CASIO,300,1,Calculadora cientifica CASIO,212,5,240,Unidad,1,0,0,default.png,1,1
+360,7.50102E+12,colores pelikan c/24 largo,165,4,colores pelikan c/24 largo,115,5,132,Unidad,1,0,0,default.png,1,1
+361,7.50102E+12,colores Pelikan c/12,105,2,colores Pelikan c/12,55.86,5,80,Unidad,1,0,0,default.png,1,1
+362,7.50224E+13,Colores MAE largos c/12,65,4,Colores MAE largos c/12,43,5,52,Unidad,1,0,0,default.png,1,1
+363,7.50115E+12,Colores mapita largos c/24,63,0,Colores mapita largos c/24,41.5,5,50.4,Unidad,1,0,0,default.png,1,1
+364,7.5012E+12,Pegamento Bully 225g,38,1,Pegamento Bully 225g,23.8,5,30.4,Unidad,1,0,0,default.png,1,1
+365,7.5012E+12,Pegamento Bully 110g,23,4,Pegamento Bully 110g,14,5,18.4,Unidad,1,0,0,default.png,1,1
+366,7.5012E+13,Pegamento Bully 55 g,16,12,Pegamento Bully 55 g,10.5,5,12.8,Unidad,1,0,0,default.png,1,1
+367,6025,Ficha bibliografica 4 x 6 raya,25,2,Ficha bibliografica 4 x 6 raya,16.5,5,20,Unidad,1,0,0,default.png,1,1
+368,7.50228E+12,Plumas de gel SHELY,60,0,Plumas de gel SHELY,41,5,48,Unidad,1,0,0,default.png,1,1
+369,1.75012E+13,foamy con diamante,6,66,foamy con diamante,2.87,5,5.6,Unidad,1,0,0,default.png,1,1
+370,6026,Papel crepe OK,9,-73,Papel crepe OK,5.2,5,7.2,Unidad,1,0,0,default.png,1,1
+371,7.50117E+12,Gises c/12 blanco,15,2,Gises c/12 blanco,7.9,5,12,Unidad,1,0,0,default.png,1,1
+372,7.50117E+12,Gises  de colores c/12,19,0,Gises  de colores c/12,11.7,5,15.2,Unidad,1,0,0,default.png,1,1
+373,6035,Calculadora escolar MAE MC-1000,56,2,Calculadora escolar MAE MC-1000,32,5,44.8,Unidad,1,0,0,default.png,1,1
+374,7.50102E+12,Pincelin pelikan markana c/6 pastel,40,0,Pincelin pelikan markana c/6 pastel,22.22,5,32,Unidad,1,0,0,default.png,1,1
+375,7.50102E+12,PINCELIN MARKANA C/6,37,-1,PINCELIN MARKANA C/6,20.95,5,29.6,Unidad,1,0,0,default.png,1,1
+376,7.50228E+12,Plumones lavables c/12 indra,70,0,Plumones lavables c/12 indra,42.4,5,56,Unidad,1,0,0,default.png,1,1
+377,7.50228E+12,Plumines cuatitos,28,0,Plumines cuatitos,16.8,5,22.4,Unidad,1,0,0,default.png,1,1
+378,7.50228E+12,plumines de colores c/24,54,1,plumines de colores c/24,35,5,43.2,Unidad,1,0,0,default.png,1,1
+379,7.50619E+12,Lapiz disney de puntillas,8,24,Lapiz disney de puntillas,2.2,5,6.4,Unidad,1,0,0,default.png,1,1
+380,6032,Cubrebocas,5,19,Cubrebocas,2.4,5,4,Unidad,1,0,0,default.png,1,1
+381,6048,Gel antibacterial,15,0,Gel antibacterial,10,5,12,Unidad,1,0,0,default.png,1,1
+382,6036,No usar,0,20,No usar,0,5,0,Granel,0,0,0,default.png,1,1
+383,6046,Sacapuntas doble contenedor basura,13,-8,Sacapuntas doble contenedor basura,8.25,5,10.4,Unidad,1,0,0,default.png,1,1
+384,6031,sacapuntas MAE con deposito tapa,7,-10,sacapuntas MAE con deposito tapa,4.4,5,5.6,Unidad,1,0,0,default.png,1,1
+385,6033,Lapiz dibujo turquoise varios.,15,26,Lapiz dibujo turquoise varios.,9.01,5,12,Unidad,1,0,0,default.png,1,1
+386,6034,Marcador agua Aqua-ink,14,2,Marcador agua Aqua-ink,7.71,5,11.2,Unidad,1,0,0,default.png,1,1
+387,7.50102E+12,Bicolor delgado pelikan,9,2,Bicolor delgado pelikan,4.5,5,7.2,Unidad,1,0,0,default.png,1,1
+388,3036,Regla de madera 30 cm,3,5,Regla de madera 30 cm,1.5,5,2.4,Unidad,1,0,0,default.png,1,1
+389,6037,hoja mantequilla,2,-55,hoja mantequilla,1.18,5,1.6,Unidad,1,0,0,default.png,1,1
+390,7.50113E+12,block papel mantequilla t/carta,43,1,block papel mantequilla t/carta,29.5,5,34.4,Unidad,1,0,0,default.png,1,1
+391,6038,protector de hoja cubre hoja o mica protectora,2,88,protector de hoja cubre hoja o mica protectora,0.63,5,1.63,Unidad,1,0,0,default.png,1,1
+392,6039,sobre bolsa oficio,10,-4,sobre bolsa oficio,5.8,5,8,Unidad,1,0,0,default.png,1,1
+393,7.50221E+12,Engrapadora A-ink  ECH-10,80,1,Engrapadora A-ink  ECH-10,54,5,64,Unidad,1,0,0,default.png,1,1
+394,7.50224E+12,Engrapadora A-ink EG-30,110,2,Engrapadora A-ink EG-30,68,5,88,Unidad,1,0,0,default.png,1,1
+395,7.50221E+12,Engrapadora MAE Mini MEK-10,50,0,Engrapadora MAE Mini MEK-10,34,5,40,Unidad,1,0,0,default.png,1,1
+396,7.50221E+12,Grapas estandar 26/6 A-ink,30,3,Grapas estandar 26/6 A-ink,19,5,24,Unidad,1,0,0,default.png,1,1
+397,6040,Block tabla chico  cuaderno de dibujo,80,5,Block tabla chico  cuaderno de dibujo,57,5,64,Unidad,1,0,0,default.png,1,1
+398,4.71322E+12,USB adata UV240,140,0,USB adata UV240,72,9,100.8,Unidad,1,0,0,default.png,1,1
+399,7.50046E+12,USB black pcs 8 GB,100,1,USB black pcs 8 GB,66,9,92.4,Unidad,1,0,0,default.png,1,1
+400,7.50046E+12,USB  black pcs 32 GB,160,0,USB  black pcs 32 GB,72,9,100.8,Unidad,1,0,0,default.png,1,1
+401,7.50228E+12,Colores SHELY 12 largos triangular,67,2,Colores SHELY 12 largos triangular,44.5,5,53.6,Unidad,1,0,0,default.png,1,1
+402,7.50115E+12,Colores Blanca Nieves c/12 largos,31,3,Colores Blanca Nieves c/12 largos,0,5,24.8,Unidad,1,0,0,default.png,1,1
+403,6041,Transportador,10,20,Transportador,0,5,8,Unidad,1,0,0,default.png,1,1
+404,9003,Servicio enmicado,1,10,Servicio enmicado,0,12,0.8,Unidad,0,0,0,default.png,1,1
+405,9004,Servicio engargolado,1,0,Servicio engargolado,0,11,0.8,Unidad,0,0,0,default.png,1,1
+406,9030,50 Hojas blancas,15,10000000,50 Hojas blancas,8,5,12,Paquete,0,0,0,default.png,1,1
+407,6061,Pintura sayer 25 ML,10,73,Pintura sayer 25 ML,7.9,5,8,Unidad,1,0,0,default.png,1,1
+408,6062,Pluma punto fino bic,6,-31,Pluma punto fino bic,3.18,5,4.8,Unidad,1,0,0,default.png,1,1
+409,7.50221E+12,contac rollo  2m,29,4,contac rollo  2m,20,5,23.2,Unidad,1,0,0,default.png,1,1
+410,7.50221E+12,Perforadora 1 orificio MAE P-1,40,1,Perforadora 1 orificio MAE P-1,27,5,32,Unidad,1,0,0,default.png,1,1
+411,7.50228E+11,Mini perforadora SHELY 2 hoyos,50,1,Mini perforadora SHELY 2 hoyos,37,5,40,Unidad,1,0,0,default.png,1,1
+412,6066,Libreta bolsillo 8 x 11.8,6,7,Libreta bolsillo 8 x 11.8,2.7,5,4.8,Unidad,1,0,0,default.png,1,1
+413,6067,Libreta taquigrafia corta cm estrella y JC,20,5,Libreta taquigrafia corta cm estrella y JC,11.94,5,16,Unidad,1,0,0,default.png,1,1
+414,6068,Libreta taquigrafia Larga marca estrella y JC,23,7,Libreta taquigrafia Larga marca estrella y JC,13.7,5,18.4,Unidad,1,0,0,default.png,1,1
+415,7.50106E+12,Crayola estandar 6 piezas delgada,15,1,Crayola estandar 6 piezas delgada,9,5,12,Unidad,1,0,0,default.png,1,1
+416,7.50129E+12,Crayones de cera c/12 delgado OK,29,1,Crayones de cera c/12 delgado OK,17,5,23.2,Unidad,1,0,0,default.png,1,1
+417,7.50228E+12,Crayones de cera gruesos c/24,70,3,Crayones de cera gruesos c/24,46.75,5,56,Unidad,1,0,0,default.png,1,1
+418,7.50103E+12,crayones de cera Carmen c/24 delgados,25,3,crayones de cera Carmen c/24 delgados,10,5,20,Unidad,1,0,0,default.png,1,1
+419,6069,Papel pasante t/carta,2,95,Papel pasante t/carta,0.7,5,1.6,Unidad,1,0,0,default.png,1,1
+420,6098,Limpia pipa lisa,1,257,Limpia pipa lisa,0.23,5,0.8,Unidad,1,0,0,default.png,1,1
+421,6090,Ficha bibliografica varios tamaños,0.5,0,Ficha bibliografica varios tamaños,0.25,5,0.4,Unidad,0,0,0,default.png,1,1
+422,7.50301E+12,plumas shely Roller c/10,59,1,plumas shely Roller c/10,34,5,47.2,Unidad,1,0,0,default.png,1,1
+423,7.50228E+12,Lapiz jumbo entrenador shely,17,5,Lapiz jumbo entrenador shely,10.34,5,13.6,Unidad,1,0,0,default.png,1,1
+424,6097,hoja milimetrica,1,50,hoja milimetrica,0.33,5,0.8,Unidad,1,0,0,default.png,1,1
+425,7.50228E+12,Sacapuntas metalico doble AG006,12,5,Sacapuntas metalico doble AG006,6,5,9.6,Unidad,1,0,0,default.png,1,1
+426,7.50228E+12,Sacapuntas metalico,6,7,Sacapuntas metalico,3,5,4.8,Unidad,1,0,0,default.png,1,1
+427,9067,dado grande,7,4,dado grande,3.5,5,5.6,Unidad,1,0,0,default.png,1,1
+428,9068,dado chico,3,3,dado chico,1,5,2.4,Unidad,1,0,0,default.png,1,1
+429,6.90917E+12,cable datos V8 DK-09,30,1,cable datos V8 DK-09,14,9,19.6,Unidad,1,0,0,default.png,1,1
+430,9071,Marcador shely doble punta permanente,15,5,Marcador shely doble punta permanente,8.2,5,12,Unidad,1,0,0,default.png,1,1
+431,90681,Caja para colores doble,40,6,Caja para colores doble,24,5,32,Unidad,1,0,0,default.png,1,1
+432,60987,Borrador figuras buo y caritas,6,17,Borrador figuras buo y caritas,2.9,5,4.8,Unidad,1,0,0,default.png,1,1
+433,908425,libros colorear,10,15,libros colorear,4.5,5,8,Unidad,1,0,0,default.png,1,1
+434,90845,borrador cubo con borrador chico,28,2,borrador cubo con borrador chico,18,5,22.4,Unidad,1,0,0,default.png,1,1
+435,980,Cuaderno profesional cuadro chico,29,-8,Cuaderno profesional cuadro chico,17.97,5,23.2,Unidad,1,0,0,default.png,1,1
+436,981,Cuaderno profesional cuadro grande,29,14,Cuaderno profesional cuadro grande,17.07,5,23.2,Unidad,1,0,0,default.png,1,1
+437,982,Cuaderno profesional raya,29,5,Cuaderno profesional raya,18.21,5,23.2,Unidad,1,0,0,default.png,1,1
+438,983,Cuaderno profesional doble raya,29,9,Cuaderno profesional doble raya,21.67,5,23.2,Unidad,1,0,0,default.png,1,1
+439,984,Cuaderno profesional dibujo,29,-1,Cuaderno profesional dibujo,19.34,5,23.2,Unidad,1,0,0,default.png,1,1
+440,1500,mica termica tamaño carta,9,53,mica termica tamaño carta,4.96,5,7.2,Unidad,1,0,0,default.png,1,1
+441,1501,mica termica 10 x 14. cms,5,-22,mica termica 10 x 14. cms,0,5,4,Unidad,1,0,0,default.png,1,1
+442,1502,mica termica 9 x 13.5 cms 8 mil,5,99,mica termica 9 x 13.5 cms 8 mil,0,5,4,Unidad,1,0,0,default.png,1,1
+443,1503,mica termica 8 x 11.5 cm 8 mil,5,100,mica termica 8 x 11.5 cm 8 mil,0,5,4,Unidad,1,0,0,default.png,1,1
+444,1504,mica termica 6.5 x 9.5 cm 8 mil,1,99,mica termica 6.5 x 9.5 cm 8 mil,0.42,5,4,Unidad,1,0,0,default.png,1,1
+445,7.50224E+12,Bicolor delgado MAE modelo: BEM-10,9,9,Bicolor delgado MAE modelo: BEM-10,4.2,5,7.2,Unidad,1,0,0,default.png,1,1
+446,10483,cable auxiliar,25,4,cable auxiliar,12,9,16.8,Unidad,1,0,0,default.png,1,1
+447,904512,Papel cascaron de huevo 1/8 OK,10,-3,Papel cascaron de huevo 1/8 OK,5.3,5,8,Unidad,1,0,0,default.png,1,1
+448,845212,Paquete 500 hojas blancas carta,135,10000000,Paquete 500 hojas blancas carta,80,5,108,Paquete,0,0,0,default.png,1,1
+449,7.50221E+12,broche  latonado  BRL-14caja 100 piezas,57,3,broche  latonado  BRL-14caja 100 piezas,39,5,45.6,Unidad,1,0,0,default.png,1,1
+450,90545,broche  latonado  BRL-14 x pieza,1,0,broche  latonado  BRL-14 x pieza,0.39,5,0.8,Unidad,0,0,0,default.png,1,1
+451,7.50221E+12,mini engrapadora mek-26,68,0,mini engrapadora mek-26,43,5,54.4,Unidad,1,0,0,default.png,1,1
+452,6.93606E+12,quitagrapas shely 6412,20,3,quitagrapas shely 6412,13,5,16,Unidad,1,0,0,default.png,1,1
+453,7.50228E+12,corrector pluma shely,18,3,corrector pluma shely,10,5,14.4,Unidad,1,0,0,default.png,1,1
+454,905121,pasta para engargolado x par,7,26,pasta para engargolado x par,4.6,5,5.6,Unidad,1,0,0,default.png,1,1
+455,7.50303E+12,cargador tipo C 1hora,70,0,cargador tipo C 1hora,37,9,51.8,Unidad,1,0,0,default.png,1,1
+456,6.91686E+12,cargador tipo v8 buytiti,70,0,cargador tipo v8 buytiti,35,9,49,Unidad,1,0,0,default.png,1,1
+457,8.10033E+11,memoria usb hyundai 16 gb,130,0,memoria usb hyundai 16 gb,63,9,88.2,Unidad,1,0,0,default.png,1,1
+458,7.50104E+12,cinta masking tape 12 mm x 10 m,8,7,cinta masking tape 12 mm x 10 m,4,5,6.4,Unidad,1,0,0,default.png,1,1
+459,7.50189E+12,cinta masking tape 24 mm 50 mm,49,4,cinta masking tape 24 mm 50 mm,27.74,5,39.2,Unidad,1,0,0,default.png,1,1
+460,7.50227E+12,Regla fexible 30 cm MAE,24,-2,Regla fexible 30 cm MAE,16,5,19.2,Unidad,1,0,0,default.png,1,1
+461,90512,Regla flexible arcoiris 30 cm,8,7,Regla flexible arcoiris 30 cm,4,5,6.4,Unidad,1,0,0,default.png,1,1
+462,78687,tira grapa,3,15,tira grapa,0.8,5,2.4,Unidad,1,0,0,default.png,1,1
+463,6.49684E+11,Pistola para silicon indra,78,2,Pistola para silicon indra,70,5,62.4,Unidad,1,0,0,default.png,1,1
+464,6.93218E+12,Calculadora kadizz TS-2806,40,3,Calculadora kadizz TS-2806,24.5,5,32,Unidad,1,0,0,default.png,1,1
+465,6.93218E+12,Calculadora kadizz TS-7302AC,87,1,Calculadora kadizz TS-7302AC,50,5,69.6,Unidad,1,0,0,default.png,1,1
+466,454121,mica termica media carta 1/2 carta,8,6,mica termica media carta 1/2 carta,4,5,6.4,Unidad,1,0,0,default.png,1,1
+467,907841,Palo de madera cuadrado,0.3,316,Palo de madera cuadrado,0.1,5,0.24,Unidad,1,0,0,default.png,1,1
+468,907842,palo madera 15 cm.,0.3,322,palo madera 15 cm.,0.13,5,0.24,Unidad,1,0,0,default.png,1,1
+469,6.91686E+12,combo cargador v8 buytiti,70,2,combo cargador v8 buytiti,35,9,49,Unidad,1,0,0,default.png,1,1
+470,6.91686E+12,combo cargador tipo C Buytiti,70,0,combo cargador tipo C Buytiti,35,9,49,Unidad,1,0,0,default.png,1,1
+471,4.71344E+12,memoria USB 32 GB ADATA,150,2,memoria USB 32 GB ADATA,68,9,95.2,Unidad,1,0,0,default.png,1,1
+472,4.71805E+12,Memoria USB 16 GB ADATA,130,1,Memoria USB 16 GB ADATA,67,9,93.8,Unidad,1,0,0,default.png,1,1
+473,7.24869E+11,Japones 28 g,5,0,Japones 28 g,2,10,4,Unidad,0,0,0,default.png,1,1
+474,477854,Palo madera redondo 30 cm,0.5,50,Palo madera redondo 30 cm,0.3,5,0.4,Unidad,1,0,0,default.png,1,1
+475,6.90917E+12,cable de datos DK-20-V8,35,3,cable de datos DK-20-V8,20,9,28,Unidad,1,0,0,default.png,1,1
+476,6.96626E+11,pintura acrilico 30 ml,14,2,pintura acrilico 30 ml,8.6,5,11.2,Unidad,1,0,0,default.png,1,1
+477,7.50189E+12,cinta adhesiva N-55 12mm x 10 m,3,23,cinta adhesiva N-55 12mm x 10 m,1.53,5,2.4,Unidad,1,0,0,default.png,1,1
+478,7.50189E+12,cinta adhesiva N-55 18mm x 33 m,16,17,cinta adhesiva N-55 18mm x 33 m,10.49,5,12.8,Unidad,1,0,0,default.png,1,1
+479,2.68116E+12,audifofonos Y-03,55,4,audifofonos Y-03,28,9,39.2,Unidad,1,0,0,default.png,1,1
+480,7.50303E+12,combo cargador 2.4A,80,4,combo cargador 2.4A,40,9,56,Unidad,1,0,0,default.png,1,1
+481,90211,bola de rafia,15,6,bola de rafia,9.5,5,12,Unidad,1,0,0,default.png,1,1
+482,6531111,CINTA CANELA 48mm X 50m,36,1,CINTA CANELA 48mm X 50m,21.9,5,28.8,Unidad,1,0,0,default.png,1,1
+483,961212,Carta poder,2,92,Carta poder,0.3,5,1.6,Unidad,1,0,0,default.png,1,1
+484,961213,Carta responsiva,2,92,Carta responsiva,0.3,5,1.6,Unidad,1,0,0,default.png,1,1
+485,961215,sobre coin,2,42,sobre coin,0.97,5,1.6,Unidad,1,0,0,default.png,1,1
+486,902112,Borrador tipo pluma,14,5,Borrador tipo pluma,7,5,11.2,Unidad,1,0,0,default.png,1,1
+487,7.50228E+12,plumines de colores brillantes WT-6816,39,2,plumines de colores brillantes WT-6816,20,5,31.2,Unidad,1,0,0,default.png,1,1
+488,7.50228E+12,Mini engrapadora Shely modelo 352,50,-2,Mini engrapadora Shely modelo 352,26,5,40,Unidad,1,0,0,default.png,1,1
+489,7.50101E+12,pintura vinci acrilica,19,34,pintura vinci acrilica,9.71,5,15.2,Unidad,1,0,0,default.png,1,1
+490,7.5011E+12,Lapiz adhesivo Kole,10,8,Lapiz adhesivo Kole,5.38,5,8,Unidad,1,0,0,default.png,1,1
+491,45454,brillantina,6,-35,brillantina,5,5,4.8,Unidad,1,0,0,default.png,1,1
+492,7.50303E+12,Cargador v8 combo 1 Hora,60,-4,Cargador v8 combo 1 Hora,30.5,9,42.7,Unidad,1,0,0,default.png,1,1
+493,6.9729E+12,cargador tipo C combo,50,-2,cargador tipo C combo,19,9,26.6,Unidad,1,0,0,default.png,1,1
+494,7.50303E+12,cable V8 1 metro,28,0,cable V8 1 metro,10.4,9,14.56,Unidad,1,0,0,default.png,1,1
+495,7.50303E+12,cable IP 2 metros,40,0,cable IP 2 metros,19,9,26.6,Unidad,1,0,0,default.png,1,1
+496,7.50303E+12,cable tipo C 2 metros,35,-1,cable tipo C 2 metros,17.5,9,24.5,Unidad,1,0,0,default.png,1,1
+497,7.50303E+12,cable tipo C 1 metro,30,-1,cable tipo C 1 metro,11.5,9,16.1,Unidad,1,0,0,default.png,1,1
+498,454212121,contac marna-tak,15,3,contac marna-tak,14,5,12,Unidad,1,0,0,default.png,1,1
+499,8.81958E+12,cutter Linai,30,3,cutter Linai,30,5,24,Unidad,1,0,0,default.png,1,1
+500,7878787,sobre de plastico indra,15,3,sobre de plastico indra,8.2,5,12,Unidad,1,0,0,default.png,1,1
+501,4545454,Color rojo carmin,9,4,Color rojo carmin,4.5,5,7.2,Unidad,1,0,0,default.png,1,1
+502,7.50228E+12,Lapices de colores Jocar C/12 Largo ok,35,1,Lapices de colores Jocar C/12 Largo ok,20,5,28,Unidad,1,0,0,default.png,1,1
+503,454545454,Carpeta con costilla folder con costilla,19,2,Carpeta con costilla folder con costilla,10.8,5,15.2,Unidad,1,0,0,default.png,1,1
+504,7501228825725<,silicon selanusa ml250,50,1,silicon selanusa ml250,50,1,40,Unidad,1,0,0,default.png,1,1
+505,7.50227E+12,Silicon liquido MAE 60 ml OK,30,8,Silicon liquido MAE 60 ml OK,18.5,5,24,Unidad,1,0,0,default.png,1,1
+506,1545454,pintura vinci cartel,17,-2,pintura vinci cartel,8.2,5,13.6,Unidad,1,0,0,default.png,1,1
+507,70530014440,Lapices de colores prisma color 24,277,0,Lapices de colores prisma color 24,250,5,221.6,Unidad,1,0,0,default.png,1,1
+508,820,LENTEJUELA,3.5,38,LENTEJUELA,1.93,5,2.8,Unidad,1,0,0,default.png,1,1
+509,3.33,cuenta donas,6,33,cuenta donas,3.33,5,4.8,Unidad,1,0,0,default.png,1,1
+510,822,chakira,3,96,chakira,1.7,5,2.4,Unidad,1,0,0,default.png,1,1
+511,4545445,brillantina,3,-10,brillantina,2,5,2.4,Unidad,1,0,0,default.png,1,1
+512,7.40617E+11,Memoria USB 32 gb kingston OK,100,0,Memoria USB 32 gb kingston OK,50,5,80,Unidad,1,0,0,default.png,1,1
+513,6604357E,Memoria USB 32 GB Kingston OK,110,1,Memoria USB 32 GB Kingston OK,50,5,88,Unidad,1,0,0,default.png,1,1
+514,7.50159E+12,block tabla chico Selecto OK,85,0,block tabla chico Selecto OK,53,5,68,Unidad,1,0,0,default.png,1,1
+515,7.50123E+12,Pistola silicon selanusa ok,85,0,Pistola silicon selanusa ok,48,5,68,Unidad,1,0,0,default.png,1,1
+516,6.96005E+11,Pistola silicon A+  OK,85,-1,Pistola silicon A+  OK,48,5,68,Unidad,1,0,0,default.png,1,1
+517,7.50303E+12,Cargador combo V8 OK,65,1,Cargador combo V8 OK,30.5,9,42.7,Unidad,1,0,0,default.png,1,1
+518,7.50303E+12,Cable tipo C 2.4 A ok,30,0,Cable tipo C 2.4 A ok,14.7,5,24,Unidad,1,0,0,default.png,1,1
+519,7.50303E+12,Cable iphone 1 metro 2.4A ok,35,1,Cable iphone 1 metro 2.4A ok,16,5,28,Unidad,1,0,0,default.png,1,1
+520,8.5022E+12,Grapa estandar indra 26/6 OK,43,5,Grapa estandar indra 26/6 OK,24.31,5,34.4,Unidad,1,0,0,default.png,1,1
+521,7.50222E+12,Grapa estandar 26/6 aliamex OK,11,1,Grapa estandar 26/6 aliamex OK,8.89,5,8.8,Unidad,1,0,0,default.png,1,1
+522,7.50227E+12,Mini Engrapadora MEM-26 MAE OK,40,5,Mini Engrapadora MEM-26 MAE OK,23.82,5,32,Unidad,1,0,0,default.png,1,1
+523,47545465,Foamy 90x70,25,25,Foamy 90x70,25,5,20,Unidad,1,0,0,default.png,1,1
+524,75022767853,PERFORADORA modelo 97V04,49,3,PERFORADORA modelo 97V04,28,5,39.2,Unidad,1,0,0,default.png,1,1
+525,7.50228E+12,MINI PEFORADORA MOD 6304,130,2,MINI PEFORADORA MOD 6304,90,5,104,Unidad,1,0,0,default.png,1,1
+526,7.50228E+12,perforadora un orificio modelo 97V04,49,0,perforadora un orificio modelo 97V04,28,5,39.2,Unidad,1,0,0,default.png,1,1
+527,15444,Espiral engargolar 12 MM,3,7,Espiral engargolar 12 MM,1.19,5,2.4,Unidad,1,0,0,default.png,1,1
+528,154441,Espiral engargolar 14 MM,3,16,Espiral engargolar 14 MM,1.24,5,2.4,Unidad,1,0,0,default.png,1,1
+529,7.50102E+12,marcador pelikan colorella 24 piezas,135,3,marcador pelikan colorella 24 piezas,67.47,5,108,Unidad,1,0,0,default.png,1,1
+530,7.50102E+12,Marcador Pelikan markana,75,0,Marcador Pelikan markana,44.22,5,60,Unidad,1,0,0,default.png,1,1
+531,7.50304E+12,Memoria USB 16 GB Stylos ST-500,95,0,Memoria USB 16 GB Stylos ST-500,46.2,9,64.68,Unidad,1,0,0,default.png,1,1
+532,7.50302E+12,Memoria USB  16 GB Stylos ST100,95,2,Memoria USB  16 GB Stylos ST100,54.55,9,76.37,Unidad,1,0,0,default.png,1,1
+533,7.50302E+12,Memoria USB  32 GB Stylos ST100,110,1,Memoria USB  32 GB Stylos ST100,51.52,9,72.13,Unidad,1,0,0,default.png,1,1
+534,LISTON,Liston 2 cm ancho,1,185,Liston 2 cm ancho,0.38,5,0.8,Granel,1,0,0,default.png,1,1
+535,7.50062E+12,Micro SD 16 GB,85,6,Micro SD 16 GB,43.14,9,60.4,Unidad,1,0,0,default.png,1,1
+536,7.50303E+12,Cargador 12w  2.4 A,75,0,Cargador 12w  2.4 A,33,9,46.2,Unidad,1,0,0,default.png,1,1
+537,6.90917E+12,Audifonos BLUETOOTH,150,0,Audifonos BLUETOOTH,58,9,81.2,Unidad,1,0,0,default.png,1,1
+538,7.50094E+12,audifonos bluetooh il2l,85,0,audifonos bluetooh il2l,39,9,54.6,Unidad,1,0,0,default.png,1,1
+539,VGA-009,cargador combo tipo c W&Z VGA-009,65,0,cargador combo tipo c W&Z VGA-009,23,9,32.2,Unidad,1,0,0,default.png,1,1
+540,7.50303E+12,Cargador de tipo C a tipo C,105,0,Cargador de tipo C a tipo C,51,9,71.4,Unidad,1,0,0,default.png,1,1
+541,7.50303E+12,cargador para  iphone 20w,120,0,cargador para  iphone 20w,57,9,79.8,Unidad,1,0,0,default.png,1,1
+542,3.15415E+12,plumones maped colorpeps ocean,130,0,plumones maped colorpeps ocean,120,5,104,Unidad,1,0,0,default.png,1,1
+543,7.5051E+12,audifonos manos libres,25,-25,audifonos manos libres,8,9,11.2,Unidad,1,0,0,default.png,1,1
+544,7.50303E+12,combo cargador iphone GAR088,65,-2,combo cargador iphone GAR088,13,9,18.2,Unidad,1,0,0,default.png,1,1
+545,7.50303E+12,combo cargdor 1 hora,65,-1,combo cargdor 1 hora,30.5,5,52,Unidad,1,0,0,default.png,1,1
+546,323232333,estuche colores bolsa,60,0,estuche colores bolsa,60,5,48,Unidad,1,0,0,default.png,1,1
+547,111111208,Diccionario Larusse azul,60,1,Diccionario Larusse azul,60,5,48,Unidad,1,0,0,default.png,1,1
+548,9.78607E+12,diccionario Larousse verde,80,0,diccionario Larousse verde,80,5,64,Unidad,1,0,0,default.png,1,1
+549,50103041875,lapices de colores Berol 24 largos,74,6,lapices de colores Berol 24 largos,40.7,5,59.2,Unidad,1,0,0,default.png,1,1
+550,JAPI00035,cable datos tipo C uso rudo  JAPI,150,2,cable datos tipo C uso rudo  JAPI,90,5,120,Unidad,1,0,0,default.png,1,1
+551,8.80609E+12,cargador carga rapida 35 w samsung,190,1,cargador carga rapida 35 w samsung,93,9,130.2,Unidad,1,0,0,default.png,1,1
+552,7.50303E+12,cable datos iphone 1hora,35,-1,cable datos iphone 1hora,17,9,23.8,Unidad,1,0,0,default.png,1,1
+553,PD35W,cargador iphone 14 pro max 50w,120,0,cargador iphone 14 pro max 50w,58,9,81.2,Unidad,1,0,0,default.png,1,1
+554,7.50303E+12,combo cargador iphone 1hora,65,0,combo cargador iphone 1hora,32.5,9,45.5,Unidad,1,0,0,default.png,1,1
+555,7.50303E+12,cable tipo C datos y carga,35,-1,cable tipo C datos y carga,16.5,9,23.1,Unidad,1,0,0,default.png,1,1
+556,7.50106E+12,crayones estandar 12,29,0,crayones estandar 12,29,5,23.2,Unidad,1,0,0,default.png,1,1
+557,7.50224E+12,Lapices de colores MAE CM-12L,60,0,Lapices de colores MAE CM-12L,60,5,48,Unidad,1,0,0,default.png,1,1
+558,6233,Memoria USB 64 gb,130,1,Memoria USB 64 gb,64,5,104,Unidad,1,0,0,default.png,1,1
+559,6767676,silicon grueso,8,37,silicon grueso,7.5,5,6.4,Unidad,1,0,0,default.png,1,1
+560,BOLAUNICEL4,bola de unicel  no 4,5,9,bola de unicel  no 4,5,5,4,Unidad,1,0,0,default.png,1,1
+561,SAMSUNG4444,cargador samsung tipo C a C 25W,110,0,cargador samsung tipo C a C 25W,51,9,71.4,Unidad,1,0,0,default.png,1,1
+562,6.97437E+12,cable tipo C a C 2M 3A,50,1,cable tipo C a C 2M 3A,21,9,29.4,Unidad,1,0,0,default.png,1,1
+563,7.40617E+11,Micro SD 32 GB Kingston,110,0,Micro SD 32 GB Kingston,49,9,68.6,Unidad,1,0,0,default.png,1,1
+564,7.50303E+12,cable de datos y carga tipo C 1M 2.1A,30,0,cable de datos y carga tipo C 1M 2.1A,11.5,9,16.1,Unidad,1,0,0,default.png,1,1
+565,7.50189E+12,cinta 12 x 50 maskin navitek,25,-3,cinta 12 x 50 maskin navitek,16.3,5,20,Unidad,1,0,0,default.png,1,1
+566,7.50229E+12,Corrector liquido Jumbo,18,4,Corrector liquido Jumbo,10.34,5,12.8,Unidad,1,0,0,default.png,1,1
+567,45454211212,Borrador strike-isi 20,8,19,Borrador strike-isi 20,4.35,5,6.4,Unidad,1,0,0,default.png,1,1
+568,7.50221E+12,Pegamento Pegas blanco escolar,25,1,Pegamento Pegas blanco escolar,13.96,5,20,Unidad,1,0,0,default.png,1,1
+569,7.50221E+12,Pegamento Pegas blanco escolar 60 grs,15,2,Pegamento Pegas blanco escolar 60 grs,8.54,5,12,Unidad,1,0,0,default.png,1,1
+570,7.50221E+12,Pegamento Pegas pegamento blanco 30 grs,10,0,Pegamento Pegas pegamento blanco 30 grs,5.76,5,8,Unidad,1,0,0,default.png,1,1
+571,7.50102E+12,Pintura Pelikan digital 150 ML,42,9,Pintura Pelikan digital 150 ML,30,5,33.6,Unidad,1,0,0,default.png,1,1
+572,5.87413E+12,perforadora un orificio 6MM,25,0,perforadora un orificio 6MM,14,5,20,Unidad,1,0,0,default.png,1,1
+573,7.50229E+12,Tijeras Jumbo 7 pulgadas,42,1,Tijeras Jumbo 7 pulgadas,23.49,5,33.6,Unidad,1,0,0,default.png,1,1
+574,7.50229E+12,Tijera escolar jumbo Modelo PTIJ10,21,4,Tijera escolar jumbo Modelo PTIJ10,11.74,5,16.8,Unidad,1,0,0,default.png,1,1
+575,7.50231E+12,tijera escola jumbo PTIJ11,13,-2,tijera escola jumbo PTIJ11,6.97,5,10.4,Unidad,1,0,0,default.png,1,1
+576,ALEYMATI20,juguetes 20 pesos,20,0,juguetes 20 pesos,20,13,16,Unidad,0,0,0,default.png,1,1
+577,ALEYMATI10,juguete 10 pesos,10,0,juguete 10 pesos,10,13,8,Unidad,0,0,0,default.png,1,1
+578,5.40118E+12,Marcador aceite sharpie doble punta,31,12,Marcador aceite sharpie doble punta,18.12,5,31,Unidad,1,0,0,default.png,1,1
+579,7.50228E+12,Grapas estandar shely modelo B266,11,4,Grapas estandar shely modelo B266,6,5,8.8,Unidad,1,0,0,default.png,1,1
+580,7.50046E+12,Juego de geometria,39,0,Juego de geometria,22,5,31.2,Unidad,1,0,0,default.png,1,1
+581,6.95263E+12,Juego de Geometria Felxible A+,80,1,Juego de Geometria Felxible A+,51.3,5,64,Unidad,1,0,0,default.png,1,1
+582,1086JGG,Juego de geometria Arcoiris modelo 1086,39,2,Juego de geometria Arcoiris modelo 1086,25,5,31.2,Unidad,1,0,0,default.png,1,1
+583,ALWYMATI15,juguete 15 pesos,15,0,juguete 15 pesos,15,13,12,Unidad,0,0,0,default.png,1,1
+584,7.50102E+12,Lapices de colores Pelikan,80,1,Lapices de colores Pelikan,45.83,5,64,Unidad,1,0,0,default.png,1,1
+585,7.50229E+12,Lapices de colores Jumbo,36,5,Lapices de colores Jumbo,18.32,5,28.8,Unidad,1,0,0,default.png,1,1
+586,7.50231E+12,Lapices de colores Jumbo 12 piezas cortos,18,2,Lapices de colores Jumbo 12 piezas cortos,8.79,5,14.4,Unidad,1,0,0,default.png,1,1
+587,7.50102E+12,puntillas minas 0.5,13,3,puntillas minas 0.5,13,5,10.4,Unidad,1,0,0,default.png,1,1
+588,215789,Lapiz puntillas 0.5,20,4,Lapiz puntillas 0.5,20,5,16,Unidad,1,0,0,default.png,1,1
+589,7.50228E+12,grapas indra estandar 26/6 c/5000,43,5,grapas indra estandar 26/6 c/5000,24.31,5,34.4,Unidad,1,0,0,default.png,1,1
+590,1111,par de ojos,3,45,par de ojos,1.34,5,2.4,Unidad,1,0,0,default.png,1,1
+591,11245454,Foamy moldeable c/12,30,3,Foamy moldeable c/12,30,13,24,Unidad,1,0,0,default.png,1,1
+592,4545455,palo madera plano tipo abatelenguas,0.2,65,palo madera plano tipo abatelenguas,0.1,5,0.16,Unidad,1,0,0,default.png,1,1
+593,6.95253E+12,calculadora,40,1,calculadora,40,5,32,Unidad,1,0,0,default.png,1,1
+594,45454541,papel cascaron de huevo 1/4 55 x34,16,7,papel cascaron de huevo 1/4 55 x34,9.2,5,12.8,Unidad,1,0,0,default.png,1,1
+595,6.92563E+12,Calculadora KADIZZ kk-8961TC,35,6,Calculadora KADIZZ kk-8961TC,20,5,28,Unidad,1,0,0,default.png,1,1
+596,7986767676,yoyo gafete,12,7,yoyo gafete,6.8,5,9.6,Unidad,1,0,0,default.png,1,1
+597,7.50228E+12,corrector en pluma shely mod 341,20,4,corrector en pluma shely mod 341,11.5,5,16,Unidad,1,0,0,default.png,1,1
+598,7.50303E+12,cable iphone,45,5,cable iphone,22.6,9,31.64,Unidad,1,0,0,default.png,1,1
+599,6.9729E+11,Cargado tipo C,50,2,Cargado tipo C,22.5,9,31.5,Unidad,1,0,0,default.png,1,1
+600,6.97437E+12,Cable v8 1hora,30,4,Cable v8 1hora,9.5,5,24,Unidad,1,0,0,default.png,1,1
+601,6.97437E+12,Cable tipo C 1 hora CAB164,30,3,Cable tipo C 1 hora CAB164,9.5,9,13.3,Unidad,1,0,0,default.png,1,1
+602,7.50831E+12,Cuaderno roca 14 mm aleman cosido,30,10,Cuaderno roca 14 mm aleman cosido,30,5,24,Unidad,1,0,0,default.png,1,1
+603,7.50831E+12,Cuaderno roca 14 mm aleman engrapado,25,4,Cuaderno roca 14 mm aleman engrapado,25,5,20,Unidad,1,0,0,default.png,1,1
+604,7.50041E+11,acuarelas makyco c/12,23,1,acuarelas makyco c/12,13.5,5,18.4,Unidad,1,0,0,default.png,1,1
+605,45454564,borrador strike-is 40,5,35,borrador strike-is 40,2.24,5,4,Unidad,1,0,0,default.png,1,1
+606,7.50229E+12,Silicon frio Jumbo,13,1,Silicon frio Jumbo,7.14,5,10.4,Unidad,1,0,0,default.png,1,1
+607,7.50102E+12,Plumon markana 12 piezas,75,2,Plumon markana 12 piezas,42.6,5,60,Unidad,1,0,0,default.png,1,1
+608,3.15415E+12,Plumon Maped,65,0,Plumon Maped,36.37,5,52,Unidad,1,0,0,default.png,1,1
+609,454654564,hoja de Acetato tamaño carta pelicula de acetato,3,100,hoja de Acetato tamaño carta pelicula de acetato,1.52,5,2.4,Unidad,1,0,0,default.png,1,1
+610,6.0276E+11,Cuaderno de apuntes Estrella 50 hojas 1/8,13,0,Cuaderno de apuntes Estrella 50 hojas 1/8,7.43,5,10.4,Unidad,1,0,0,default.png,1,1
+611,6.0276E+11,Cuaderno de apuntes Estrella 100 hojas 1/8,18,-1,Cuaderno de apuntes Estrella 100 hojas 1/8,10.23,5,14.4,Unidad,1,0,0,default.png,1,1
+612,7.50229E+12,sobre de plastico con hilo Jumbo,25,4,sobre de plastico con hilo Jumbo,14.3,5,20,Unidad,1,0,0,default.png,1,1
+613,7.50229E+12,sobre de plastico con hilo oficio Jumbo,28,1,sobre de plastico con hilo oficio Jumbo,15.96,5,22.4,Unidad,1,0,0,default.png,1,1
+614,9.78969E+12,diccionario escolar basico,66,1,diccionario escolar basico,37.51,5,52.8,Unidad,1,0,0,default.png,1,1
+615,9.78607E+12,Diccionario escolar,126,1,Diccionario escolar,72.14,5,100.8,Unidad,1,0,0,default.png,1,1
+616,9.78607E+12,95.42,168,1,95.42,95.42,5,134.4,Unidad,1,0,0,default.png,1,1
+617,4555454,cordon plano para gafete,9,3,cordon plano para gafete,9,5,7.2,Unidad,1,0,0,default.png,1,1
+618,7.50104E+12,cinta adhesiva 12m x 10 m Janel,3,40,cinta adhesiva 12m x 10 m Janel,1.28,5,2.4,Unidad,1,0,0,default.png,1,1
+619,6.59525E+11,porta lapiz Prell,34,3,porta lapiz Prell,18.28,5,27.2,Unidad,1,0,0,default.png,1,1
+620,7.50228E+12,porta lapices Jocar,35,2,porta lapices Jocar,35,5,28,Unidad,1,0,0,default.png,1,1
+621,6.95253E+12,Calculadora GD1048B tamaño grande,139,2,Calculadora GD1048B tamaño grande,83.8,5,111.2,Unidad,1,0,0,default.png,1,1
+622,7.50221E+12,sobre de plastico tamaño carta MAE,25,2,sobre de plastico tamaño carta MAE,14.5,5,20,Unidad,1,0,0,default.png,1,1
+623,7.50221E+12,sobre de plastico tamaño carta Jumbo,25,2,sobre de plastico tamaño carta Jumbo,14.5,5,20,Unidad,1,0,0,default.png,1,1
+624,457545454,abaco chico Tamayo,21,5,abaco chico Tamayo,11.5,5,16.8,Unidad,1,0,0,default.png,1,1
+625,130141,COLORES PRISMACOLOR LARGOS C/12,175,0,COLORES PRISMACOLOR LARGOS C/12,100,5,140,Unidad,1,0,0,default.png,1,1
+626,7.50159E+12,cuaderno profesional 200 hojas,80,0,cuaderno profesional 200 hojas,80,5,64,Unidad,1,0,0,default.png,1,1
+627,45465456,tabla fibracel 20 x 20,5,22,tabla fibracel 20 x 20,2.27,5,4,Unidad,1,0,0,default.png,1,1
+628,45454543,Papel imprenta,3,47,Papel imprenta,1.5,5,2.4,Unidad,1,0,0,default.png,1,1
+629,789966,Papel p/rotafolio,10,15,Papel p/rotafolio,6.65,5,8,Unidad,1,0,0,default.png,1,1
+630,7.50101E+12,Masa para moldear tipo play doh,31,0,Masa para moldear tipo play doh,17.85,5,24.8,Unidad,1,0,0,default.png,1,1
+631,9.0238E+12,Pegamento escolar Kores 250 G,44,2,Pegamento escolar Kores 250 G,25.45,5,35.2,Unidad,1,0,0,default.png,1,1
+632,7.21672E+11,cinta masking tape tuk 12m x 50 m,19,4,cinta masking tape tuk 12m x 50 m,10.84,5,15.2,Unidad,1,0,0,default.png,1,1
+633,7.5083E+12,Fichas didacticas,48,6,Fichas didacticas,27.42,5,38.4,Unidad,1,0,0,default.png,1,1
+634,70530014860,colores prismacolor c/24 largos,250,1,colores prismacolor c/24 largos,141.8,5,220,Unidad,1,0,0,default.png,1,1
+635,70530014815,Colores prismacolor c/12 largos,140,3,Colores prismacolor c/12 largos,80.17,5,112,Unidad,1,0,0,default.png,1,1
+636,7.75084E+12,Lapices de colores pelikan c/24 largos,166,0,Lapices de colores pelikan c/24 largos,94.92,5,132.8,Unidad,1,0,0,default.png,1,1
+637,7.75084E+12,Lapices de colores pelikan c/12 triangular,80,2,Lapices de colores pelikan c/12 triangular,45.81,5,64,Unidad,1,0,0,default.png,1,1
+638,7.50303E+12,cable datos 2 m v8,40,-1,cable datos 2 m v8,25,9,35,Unidad,1,0,0,default.png,1,1
+639,7.50121E+12,Sobre con hilo de plastico tamaño oficio barrilito,34,7,Sobre con hilo de plastico tamaño oficio barrilito,20.05,5,27.2,Unidad,1,0,0,default.png,1,1
+640,7.87988E+11,libro jumbo para colorear,78,0,libro jumbo para colorear,44.08,5,62.4,Unidad,1,0,0,default.png,1,1
+641,4.54646E+18,Marcador pintarron Magistral,29,7,Marcador pintarron Magistral,17,5,23.2,Unidad,1,0,0,default.png,1,1
+642,7.50094E+12,AUDIFONOS BLUETOOTH il2SB,85,8,AUDIFONOS BLUETOOTH il2SB,39,9,54.6,Unidad,1,0,0,default.png,1,1
+643,7.50094E+12,AUDIFONOS BLUETOOTH il2SP,85,2,AUDIFONOS BLUETOOTH il2SP,39,9,54.6,Unidad,1,0,0,default.png,1,1
+644,7.50094E+12,AUDIFONOS BLUETOOTH il2SL,85,6,AUDIFONOS BLUETOOTH il2SL,39,9,54.6,Unidad,1,0,0,default.png,1,1
+645,7.50094E+12,AUDIFONOS BLUETOOTH il2F,85,2,AUDIFONOS BLUETOOTH il2F,39,9,54.6,Unidad,1,0,0,default.png,1,1
+646,7.50094E+12,AUDIFONOS BLUETOOTH,85,7,AUDIFONOS BLUETOOTH,39,9,54.6,Unidad,1,0,0,default.png,1,1
+647,7.50094E+12,AUDIFONOS BLUETOOTH il2SG,85,6,AUDIFONOS BLUETOOTH il2SG,39,9,54.6,Unidad,1,0,0,default.png,1,1
+648,7.50094E+12,AUDIFONOS BLUETOOTH il2SD,85,8,AUDIFONOS BLUETOOTH il2SD,39,9,54.6,Unidad,1,0,0,default.png,1,1
+649,7.50094E+12,AUDIFONOS BLUETOOTH il2SN,85,26,AUDIFONOS BLUETOOTH il2SN,29,9,40.6,Unidad,1,0,0,default.png,1,1
+650,7.50094E+12,AUDIFONOS BLUETOOTH il2,85,21,AUDIFONOS BLUETOOTH il2,37.5,9,52.5,Unidad,1,0,0,default.png,1,1
+651,6.93955E+12,Memoria micro SD imou,90,2,Memoria micro SD imou,30,9,42,Unidad,1,0,0,default.png,1,1
+652,7.5051E+12,Audifonos manos libre Xinmi XR3119,25,0,Audifonos manos libre Xinmi XR3119,12,9,16.8,Unidad,1,0,0,default.png,1,1
+653,6.9729E+12,Combo cargador nebro doble entraga 20w,90,0,Combo cargador nebro doble entraga 20w,45,9,63,Unidad,1,0,0,default.png,1,1
+654,6.97437E+12,Cable tipo C 1 hora CAB164,30,-2,Cable tipo C 1 hora CAB164,9.5,9,13.3,Unidad,1,0,0,default.png,1,1
+655,6.97437E+12,Cable de datos v8 1 hora,30,-3,Cable de datos v8 1 hora,9.5,9,13.3,Unidad,1,0,0,default.png,1,1
+656,6.97437E+12,Cable datos IP 1 hora CAB187,30,-6,Cable datos IP 1 hora CAB187,11.5,9,16.1,Unidad,1,0,0,default.png,1,1
+657,6.93185E+12,Memoria USB 16 GB HIKVISION,90,2,Memoria USB 16 GB HIKVISION,50,9,70,Unidad,1,0,0,default.png,1,1
+658,7.50303E+12,CABLE V8 1m MARCA 1 HORA,30,0,CABLE V8 1m MARCA 1 HORA,10,9,14,Unidad,1,0,0,default.png,1,1
+659,7.50303E+12,Combo Cargador tipo C 1 hora gar142,65,-2,Combo Cargador tipo C 1 hora gar142,32,9,44.8,Unidad,1,0,0,default.png,1,1
+660,7.50094E+12,AUDIFONOS BLUETOOTH il2SY,85,0,AUDIFONOS BLUETOOTH il2SY,39,9,54.6,Unidad,1,0,0,default.png,1,1
+661,7.5051E+12,Audifonos manos libres  XR-3116,25,1,Audifonos manos libres  XR-3116,8,9,11.2,Unidad,1,0,0,default.png,1,1
+662,7.5051E+12,Diadema bluetooth xr-3219,160,-3,Diadema bluetooth xr-3219,83,9,116.2,Unidad,1,0,0,default.png,1,1
+663,48,audifonos diadema xr3311,95,1,audifonos diadema xr3311,48,9,67.2,Unidad,1,0,0,default.png,1,1
+664,7.5051E+12,diadema manos libres xr-3311,95,-2,diadema manos libres xr-3311,48,9,67.2,Unidad,1,0,0,default.png,1,1
+665,7.503E+12,Tijera escolar jocar,13,-5,Tijera escolar jocar,7.8,5,10.4,Unidad,1,0,0,default.png,1,1
+666,7.50228E+12,regla flexible shely  mod: j73007,21,6,regla flexible shely  mod: j73007,12.2,5,16.8,Unidad,1,0,0,default.png,1,1
+667,7.50129E+12,pegamento blanco makyco 125 gramos,27,0,pegamento blanco makyco 125 gramos,16,5,21.6,Unidad,1,0,0,default.png,1,1
+668,7.50102E+12,masa moldeable pelikan,28,1,masa moldeable pelikan,16.31,5,28,Unidad,1,0,0,default.png,1,1
+669,7.50102E+12,Masa moldeable pelikan,28,1,Masa moldeable pelikan,16.31,5,28,Unidad,1,0,0,default.png,1,1
+670,7.50102E+12,Masa moldeable pelikan,28,1,Masa moldeable pelikan,16.31,5,28,Unidad,1,0,0,default.png,1,1
+671,7.50102E+12,Masa moldeable pelikan,28,1,Masa moldeable pelikan,16.31,5,28,Unidad,1,0,0,default.png,1,1
+672,545456222,etiquetas tamaño carta janel,5,18,etiquetas tamaño carta janel,2.52,5,5,Unidad,1,0,0,default.png,1,1
+673,7.50303E+12,combo cargador,65,0,combo cargador,30,9,42,Unidad,1,0,0,default.png,1,1
+674,7.50102E+12,Marcador permananete Pelikan,22,10,Marcador permananete Pelikan,12.58,5,22,Unidad,1,0,0,default.png,1,1
+675,7.50301E+12,Cuaderno frances cosido strike isi cuadro chico,47,3,Cuaderno frances cosido strike isi cuadro chico,28.12,5,47,Unidad,1,0,0,default.png,1,1
+676,7.50301E+12,Cuaderno frances cosido strike isi cuadro grande,47,3,Cuaderno frances cosido strike isi cuadro grande,28.12,5,47,Unidad,1,0,0,default.png,1,1
+677,7.50301E+12,Cuaderno frances cosido strike isi dibujo,47,2,Cuaderno frances cosido strike isi dibujo,28.12,5,47,Unidad,1,0,0,default.png,1,1
+678,77778888777,foamy moldeable bolsita individual,3,0,foamy moldeable bolsita individual,3,13,3,Unidad,0,0,0,default.png,1,1
+679,7.50303E+12,combo cargador tipo C 1 hora,60,-2,combo cargador tipo C 1 hora,27.5,9,38.5,Unidad,1,0,0,default.png,1,1
+680,6.97067E+12,corrector cinta 2 pzs,20,0,corrector cinta 2 pzs,10,1,18,Unidad,1,0,0,default.png,1,1
+681,6.97067E+12,corrector cinta unicornio,10,1,corrector cinta unicornio,4,5,9,Unidad,1,0,0,default.png,1,1
+682,2.55843E+14,moño charro,20,2,moño charro,12,5,18,Unidad,1,0,0,default.png,1,1
+683,5.64515E+11,bigote,7,39,bigote,3,5,6,Unidad,1,0,0,default.png,1,1
+684,VGA-008,COMBO CARGADOR iPHONE,50,2,COMBO CARGADOR iPHONE,19,9,26.6,Unidad,1,0,0,default.png,1,1
+685,6.97726E+12,CARGADOR DOBLE VGA-024,40,-3,CARGADOR DOBLE VGA-024,21,9,29.4,Unidad,1,0,0,default.png,1,1
+686,7778,Bicolor grueso santa cruz,16,9,Bicolor grueso santa cruz,10,5,16,Unidad,1,0,0,default.png,1,1
+687,7.90203E+11,Tortuguita,5,15,Tortuguita,5,14,5,Unidad,1,0,0,default.png,1,1
+688,1600001,Espiral para engargolar 14mm para 110 hojas,3,14,Espiral para engargolar 14mm para 110 hojas,1.18,5,3,Unidad,1,0,0,default.png,1,1
+689,1600002,Espiral para engargolar 16mm para 150 hojas,3,27,Espiral para engargolar 16mm para 150 hojas,1.8,5,3,Unidad,1,0,0,default.png,1,1
+690,7.50228E+12,corrector tipo pluma shely c/12,20,12,corrector tipo pluma shely c/12,11.5,5,20,Unidad,1,0,0,default.png,1,1
+691,6.9729E+12,Cargador tipo C VGA001 20 w,80,1,Cargador tipo C VGA001 20 w,39,9,54.6,Unidad,1,0,0,default.png,1,1
+692,7.5051E+12,Audifonos bluetooth XR3202,120,120,Audifonos bluetooth XR3202,57,9,79.8,Unidad,1,0,0,default.png,1,1
+693,7.5051E+12,audifono bluetooth diadema p47  xr-3210,90,1,audifono bluetooth diadema p47  xr-3210,44,9,61.6,Unidad,1,0,0,default.png,1,1
+694,7.50102E+12,Silicon liquido pelikan 30 ml,14,5,Silicon liquido pelikan 30 ml,8.29,5,14,Unidad,1,0,0,default.png,1,1
+695,7.50102E+12,Silicon liquido pelikan 100 ml,29,3,Silicon liquido pelikan 100 ml,16.29,5,29,Unidad,1,0,0,default.png,1,1
+696,787897987,Cacahuates,7,0,Cacahuates,7,14,7,Unidad,1,0,0,default.png,1,1
+697,16584,calavera figura foami,6,5,calavera figura foami,0,5,0,Unidad,1,0,0,default.png,1,1
+698,800001,cortina metálica,20,7,cortina metálica,8,5,0,Unidad,1,0,0,default.png,1,1
+699,6.98458E+12,pintura para cara,20,5,pintura para cara,10,5,0,Unidad,1,0,0,default.png,1,1
+700,7.50228E+12,engrapadora,65,0,engrapadora,50,5,65,Unidad,1,0,0,default.png,1,1
+701,6.9729E+12,combo cargador iphone nebro VGA-008,50,-2,combo cargador iphone nebro VGA-008,19,9,26.6,Unidad,1,0,0,default.png,1,1
+702,7.50229E+12,pincel mae,6,7,pincel mae,0,5,0,Unidad,1,0,0,default.png,1,1
+703,7.50091E+12,cable datos tipo c 2 metros CAB269,50,1,cable datos tipo c 2 metros CAB269,31,9,43.4,Unidad,1,0,0,default.png,1,1
+704,6.9729E+12,ADAPTADOR DE CORRIENTE TIPO C 20 W,60,2,ADAPTADOR DE CORRIENTE TIPO C 20 W,30,9,42,Unidad,1,0,0,default.png,1,1
+705,7.50201E+12,"Tijera escolar 5\ KW""",16,5,"Tijera escolar 5\ KW""",9.52,5,16,Unidad,1,0,0,default.png,1,1
+706,4.54647E+11,porta gafete yoyo  personajes,25,5,porta gafete yoyo  personajes,14,5,25,Unidad,1,0,0,default.png,1,1
+707,7.50221E+12,porta gafete transparente vertical MAE GFT-10V,16,13,porta gafete transparente vertical MAE GFT-10V,9.22,5,16,Unidad,1,0,0,default.png,1,1
+708,7.25226E+11,pulparindo mini,3,5,pulparindo mini,3,14,3,Unidad,1,0,0,default.png,1,1
+709,7.50091E+12,cable datos  tipo C 1 hora,35,2,cable datos  tipo C 1 hora,14,9,19.6,Unidad,1,0,0,default.png,1,1
+710,6.9729E+11,combo cargador iphone nebro VGB01L,50,0,combo cargador iphone nebro VGB01L,20,9,28,Unidad,1,0,0,default.png,1,1
+711,6.98601E+12,Pistola de silicon A+ barra 7mm,85,3,Pistola de silicon A+ barra 7mm,48,5,85,Unidad,1,0,0,default.png,1,1
+712,7.50131E+12,lapiz adhesivo top 36 grs,39,11,lapiz adhesivo top 36 grs,26.6,5,39,Unidad,1,0,0,default.png,1,1
+713,6.9729E+12,combo cargador tipo C,65,0,combo cargador tipo C,28,9,39.2,Unidad,1,0,0,default.png,1,1
+714,6.9729E+12,combo cargador tipo V8 nebro,65,0,combo cargador tipo V8 nebro,27,9,37.8,Unidad,1,0,0,default.png,1,1
+715,6.9729E+12,COMBO CARGADOR IPHONE 20 W,85,0,COMBO CARGADOR IPHONE 20 W,42,9,58.8,Unidad,1,0,0,default.png,1,1
+716,7.50511E+12,3,15,1,3,15,9,21,Unidad,1,0,0,default.png,1,1
+717,7.5031E+12,combo cargador  turbo power V8 30 w,70,0,combo cargador  turbo power V8 30 w,28,9,39.2,Unidad,1,0,0,default.png,1,1
+718,7.50231E+12,Juego de Geometria jumbo flexible PJG5,80,1,Juego de Geometria jumbo flexible PJG5,47.09,5,80,Unidad,1,0,0,default.png,1,1
+719,7.50229E+12,Juego de geometria jumbo PJG2,50,2,Juego de geometria jumbo PJG2,31.06,5,50,Unidad,1,0,0,default.png,1,1
+720,7.21672E+11,cinta masking tape tuk 18mm x 50 m,27,1,cinta masking tape tuk 18mm x 50 m,15.81,5,27,Unidad,1,0,0,default.png,1,1
+721,7.21672E+11,cinta masking tape tuk 24mm x 50 m,36,1,cinta masking tape tuk 24mm x 50 m,21.12,5,36,Unidad,1,0,0,default.png,1,1
+722,7.21672E+11,cinta masking tape tuk 36mm x 50 m,54,1,cinta masking tape tuk 36mm x 50 m,31.71,5,54,Unidad,1,0,0,default.png,1,1
+723,7.50094E+12,bocina radio FM modelo RFR228,85,3,bocina radio FM modelo RFR228,34,9,85,Unidad,1,0,0,default.png,1,1
+724,6.92778E+12,pistola de silicon,39,7,pistola de silicon,14,5,39,Unidad,1,0,0,default.png,1,1
+725,6.97228E+12,porta gafete beknn,8,20,porta gafete beknn,2.5,5,8,Unidad,1,0,0,default.png,1,1

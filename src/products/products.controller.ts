@@ -52,6 +52,13 @@ export class ProductsController{
         return this.productsService.uploadImage(id,file);
     }
 
+    @Patch('addInventory/:barcode')
+    @ApiOperation({summary: 'Update product', description: 'add produts to inventory'})
+    addToinvenory(@Param('barcode')barcode: string, @Body()updateProductDto: UpdateProductDto){
+
+        return this.productsService.addToinvenory(barcode, updateProductDto)
+    }
+
     @Patch(':barcode')
     @ApiOperation({summary: 'Update product', description: 'Update an existing product by id'})
     updateProduct(@Param('barcode')barcode: string, @Body()updateProductDto: UpdateProductDto){
