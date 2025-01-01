@@ -90,13 +90,14 @@ export class ReportsService {
            
             existingEntry.expense = parseFloat((existingEntry.expense + parseFloat(entries[0].purchaseTotalPrice)).toFixed(2));
             existingEntry.total = parseFloat((existingEntry.income - existingEntry.expense).toFixed(2));
-            // Puedes realizar otras acciones aquí si el nombre ya existe
+          
           } else {
+            console.log("entra al else ........")
             const result1 = {
               name: entries[0].categoryname,
               income: 0,
               expense: entries[0].purchaseTotalPrice,
-              total: entries[0].purchaseTotalPrice
+              total: -entries[0].purchaseTotalPrice
 
             }
             reports.push(result1)
@@ -152,7 +153,7 @@ export class ReportsService {
             name: expenseName[0],
             income: 0,
             expense: expenseAmount[0],
-            total: expenseAmount[0]
+            total: -expenseAmount[0]
           }
           reports.push(result1)
      

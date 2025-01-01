@@ -14,6 +14,7 @@ import { PackageProduct } from "./package-product.entity";
 
 @Injectable()
 export class ProductsRepository {
+    
 
     constructor(
         @InjectRepository(Product)
@@ -32,6 +33,46 @@ export class ProductsRepository {
 
 
     ) { }
+
+    async getProductsInventory(categoryName?: string) {
+        const queryBuilder = this.productRepository
+          .createQueryBuilder('product')
+          .leftJoinAndSelect('product.category', 'category') // Relación con categoría
+          .select([
+            'product.barcode',
+            'product.id',
+            'product.name',
+            'product.purchasePrice',
+            'product.entriy',
+            'product.output',
+            'product.stock',
+            'product.price',
+            'category.id',
+            'category.name',
+          ]);
+      
+        // Si se envía un nombre de categoría, aplica el filtro
+        if (categoryName) {
+          queryBuilder.where('category.name = :categoryName', { categoryName });
+        }
+      
+        // Obtiene los productos
+        const products = await queryBuilder.getMany();
+      
+        // Calcula el costo total del inventario (precio * stock)
+        const totalInventoryCost = products.reduce(
+          (total, product) => total + Number(product.purchasePrice) * Number(product.stock),
+          0,
+        );
+      
+        // Retorna los productos y el costo total
+        return {
+          categoryName: categoryName || 'All categories',
+          totalInventoryCost,
+          products,
+        };
+      }
+               
 
     async getProducts() {
         //return this.products;
@@ -180,6 +221,25 @@ export class ProductsRepository {
         if (!product) {
             throw new NotFoundException('Product does not exist');
         }
+        console.log("productos que hay" + product.stock);
+        console.log("productos por agregar " + updateProductDto.entriy);
+        console.log("precio de compra: " + product.purchasePrice);
+        console.log("Nuevo precio de compra " + updateProductDto.purchasePrice);
+        // Calcula el nuevo precio promedio ponderado
+const currentStock = Number(product.stock) || 0; // Stock actual
+const newStock = Number(updateProductDto.entriy) || 0; // Nuevos productos a agregar
+const currentPrice = Number(product.purchasePrice) || 0; // Precio de compra actual
+const newPrice = Number(updateProductDto.purchasePrice) || 0; // Nuevo precio de compra
+
+const totalStock = parseFloat((currentStock + newStock).toFixed(2));
+const averagePurchasePrice = parseFloat(
+  (
+    (currentStock * currentPrice + newStock * newPrice) /
+    (totalStock || 1) // Evitar división por cero
+  ).toFixed(2)
+);
+        
+
 
         // const entriy = parseFloat((updateProductDto.entriy + product.entriy).toFixed(2));
         const stock = parseFloat((Number(updateProductDto.stock) + Number(updateProductDto.entriy)).toFixed(2));
@@ -189,7 +249,8 @@ export class ProductsRepository {
 
         const entriy = parseFloat((entriyValue + productEntriyValue).toFixed(2));
         console.log(`Stock ${stock}`)
-
+        console.log("precio promediado ", averagePurchasePrice)
+       
         // Actualiza el producto con los campos proporcionados en el DTO
         await this.productRepository.update(product.id, {
             description: updateProductDto.description,
@@ -200,7 +261,7 @@ export class ProductsRepository {
             categoryId: updateProductDto.categoryId,
             barcode: updateProductDto.barcode,
             howToSell: updateProductDto.howToSell,
-            purchasePrice: updateProductDto.purchasePrice,
+            purchasePrice:  averagePurchasePrice, //purchasePrice: updateProductDto.purchasePrice,
             wholesalePrice: updateProductDto.wholesalePrice,
             stocktaking: updateProductDto.stocktaking,
             minimumStock: updateProductDto.minimumStock,
@@ -263,7 +324,7 @@ export class ProductsRepository {
             categoryId: updateProductDto.categoryId,
             barcode: updateProductDto.barcode,
             howToSell: updateProductDto.howToSell,
-            purchasePrice: updateProductDto.purchasePrice,
+            purchasePrice: updateProductDto.purchasePrice, 
             wholesalePrice: updateProductDto.wholesalePrice,
             stocktaking: updateProductDto.stocktaking,
             minimumStock: updateProductDto.minimumStock,

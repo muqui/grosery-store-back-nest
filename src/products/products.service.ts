@@ -5,6 +5,9 @@ import { UpdateProductDto } from "./dto/update-product.dto";
 
 @Injectable()
 export class ProductsService{
+    getProductsInventory(name: string) {
+        return this.productsRepository.getProductsInventory(name);
+    }
   
    
     

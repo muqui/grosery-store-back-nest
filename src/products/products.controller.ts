@@ -18,10 +18,12 @@ export class ProductsController{
     constructor (private readonly productsService: ProductsService){
 
     }
+
     @Get()
     getProducts(){
         return this.productsService.getProducts();
     }
+    
     @ApiOperation({ summary: 'Return list of all entries', description: 'list entries' })
     @Get('entries')
     getAllEntries(){
@@ -32,6 +34,10 @@ export class ProductsController{
     @Get('search')
     searchProducts(@Query('name') name: string) {
         return this.productsService.findByName(name);
+    }
+    @Get('inventory')
+    getProductsInvetory(@Query('name') name?: string){
+        return this.productsService.getProductsInventory(name);
     }
 
     @Get(':barcode')
